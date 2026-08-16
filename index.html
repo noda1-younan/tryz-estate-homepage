@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>トライズエステート株式会社｜地域に根ざす不動産パートナー</title>
+<meta name="description" content="トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。地域の土地勘を活かし、誠実な対応を大切にしています。">
+<link rel="canonical" href="https://tryz-estate.pages.dev/">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png">
+<link rel="apple-touch-icon" href="/assets/images/favicon-180.png">
+<meta name="theme-color" content="#082555">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="トライズエステート株式会社">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="トライズエステート株式会社｜地域に根ざす不動産パートナー">
+<meta property="og:description" content="トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。地域の土地勘を活かし、誠実な対応を大切にしています。">
+<meta property="og:url" content="https://tryz-estate.pages.dev/">
+<meta property="og:image" content="https://tryz-estate.pages.dev/assets/images/ogp-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="トライズエステート株式会社｜地域に根ざす不動産パートナー">
+<meta name="twitter:description" content="トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。地域の土地勘を活かし、誠実な対応を大切にしています。">
+<meta name="twitter:image" content="https://tryz-estate.pages.dev/assets/images/ogp-default.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #082555;
+    --navy-deep: #05193d;
+    --navy-soft: #2c4a7c;
+    --gold: #c9a45c;
+    --gold-soft: #e6d3a8;
+    --paper: #ffffff;
+    --mist: #f2f5fa;
+    --mist-deep: #e8edf5;
+    --ink: #1c2430;
+    --ink-soft: #5b6474;
+    --line: #dde3ee;
+    --radius: 4px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Noto Sans JP', sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.8;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .serif{font-family:'Noto Serif JP', serif;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:.18em;
+    font-weight:700;
+    color:var(--navy);
+    border-bottom:2px solid var(--gold);
+    padding-bottom:6px;
+    margin-bottom:18px;
+  }
+  h2.section-title{
+    font-size:clamp(24px,3vw,34px);
+    font-weight:700;
+    letter-spacing:.02em;
+    line-height:1.5;
+    color:var(--navy);
+    margin-bottom:14px;
+  }
+  .section-lead{color:var(--ink-soft);font-size:15px;max-width:640px;}
+  section{padding:88px 0;}
+  .divider-peak{
+    height:26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    color:var(--gold);
+  }
+  .divider-peak svg{width:120px;height:16px;}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
+
+  /* ---------- HEADER ---------- */
+  header.site-header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1120px;margin:0 auto;padding:14px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+  }
+  .brand{flex-shrink:0;}
+  .brand img{height:120px;width:auto;max-width:100%;}
+  nav.main-nav{display:flex;flex-wrap:wrap;row-gap:8px;column-gap:22px;font-size:13.5px;font-weight:500;flex-shrink:1;min-width:0;justify-content:flex-end;}
+  nav.main-nav a{position:relative;padding:6px 0;color:var(--ink);white-space:nowrap;}
+  nav.main-nav a:hover{color:var(--navy);}
+  nav.main-nav a::after{
+    content:"";position:absolute;left:0;bottom:0;width:0%;height:2px;background:var(--gold);
+    transition:width .25s ease;
+  }
+  nav.main-nav a:hover::after{width:100%;}
+  .header-cta{
+    display:flex;align-items:center;gap:18px;font-size:13px;
+  }
+  .btn-line{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--navy);color:#fff;
+    padding:11px 22px;border-radius:2px;font-weight:700;font-size:13px;
+    letter-spacing:.05em;
+    transition:background .2s ease;
+    white-space:nowrap;
+  }
+  .btn-line:hover{background:var(--navy-deep);}
+  .nav-toggle{
+    display:none;flex-direction:column;justify-content:center;gap:5px;
+    width:38px;height:38px;padding:0;border:0;background:transparent;cursor:pointer;flex-shrink:0;
+  }
+  .nav-toggle span{display:block;width:100%;height:2px;background:var(--navy);}
+  @media (max-width:860px){
+    .header-inner{position:relative;flex-wrap:wrap;padding:10px 20px;}
+    .brand img{height:44px;}
+    .nav-toggle{display:flex;order:2;margin-left:12px;}
+    .header-cta{order:1;margin-left:auto;}
+    .btn-line{padding:9px 14px;font-size:12px;}
+    nav.main-nav{
+      display:none;order:3;flex-basis:100%;
+      position:absolute;top:100%;left:0;right:0;
+      background:#fff;border:1px solid var(--line);border-top:none;
+      flex-direction:column;align-items:flex-start;row-gap:2px;
+      padding:10px 20px 16px;box-shadow:0 16px 28px rgba(8,37,85,.1);z-index:50;
+    }
+    nav.main-nav.is-open{display:flex;}
+    nav.main-nav a{padding:10px 0;width:100%;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:640px;display:flex;align-items:flex-end;
+    color:#fff;overflow:hidden;
+  }
+  .hero-media{position:absolute;inset:0;z-index:0;}
+  .hero-media img{width:100%;height:100%;object-fit:cover;}
+  .hero-media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(5,25,61,.15) 0%, rgba(5,25,61,.35) 55%, rgba(5,25,61,.88) 100%);
+  }
+  .hero-content{position:relative;z-index:1;width:100%;padding:0 0 56px;}
+  .hero-badges{display:flex;gap:12px;margin-bottom:26px;flex-wrap:wrap;}
+  .badge{
+    border:1px solid rgba(255,255,255,.55);
+    border-radius:2px;
+    padding:10px 16px;
+    font-size:11px;letter-spacing:.06em;text-align:center;line-height:1.5;
+    backdrop-filter:blur(2px);
+  }
+  .badge b{display:block;font-size:20px;font-family:'Noto Serif JP',serif;color:var(--gold-soft);}
+  .hero-title{
+    font-size:clamp(30px,4.4vw,52px);
+    font-weight:900;
+    letter-spacing:.03em;
+    line-height:1.4;
+    text-shadow:0 2px 18px rgba(0,0,0,.35);
+    margin-bottom:10px;
+  }
+  .hero-title small{
+    display:block;font-size:14px;font-weight:700;letter-spacing:.32em;
+    color:var(--gold-soft);margin-bottom:14px;
+  }
+  .hero-sub{font-size:14px;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:30px;}
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+  .btn-gold{
+    background:var(--gold);color:var(--navy-deep);font-weight:700;
+    padding:16px 34px;font-size:14px;letter-spacing:.05em;border-radius:2px;
+    box-shadow:0 10px 24px rgba(0,0,0,.25);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,.3);}
+  .btn-ghost-line{
+    font-size:13px;font-weight:700;color:#fff;border-bottom:1px solid rgba(255,255,255,.6);
+    padding-bottom:3px;
+  }
+  .hero-note{font-size:11px;color:rgba(255,255,255,.6);margin-top:16px;}
+
+  /* ---------- VIDEO PLACEHOLDER STRIP ---------- */
+  .video-strip{
+    background:var(--mist-deep);
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  .video-strip-inner{
+    max-width:1120px;margin:0 auto;padding:18px 24px;
+    display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  }
+  .video-slot{
+    flex:0 0 220px;height:96px;
+    border:1.5px dashed #a9b6cc;border-radius:4px;
+    display:flex;align-items:center;justify-content:center;
+    color:#8592a8;font-size:11px;text-align:center;line-height:1.5;
+    background:repeating-linear-gradient(45deg, #f7f9fc, #f7f9fc 10px, #eef1f7 10px, #eef1f7 20px);
+  }
+  .video-strip-text{flex:1;min-width:220px;}
+  .video-strip-text .tag{
+    display:inline-block;background:var(--navy);color:#fff;font-size:11px;
+    padding:4px 10px;border-radius:2px;margin-bottom:6px;font-weight:700;letter-spacing:.04em;
+  }
+  .video-strip-text p{font-weight:700;color:var(--navy);font-size:15px;}
+  .video-strip-link{
+    font-size:13px;font-weight:700;color:var(--navy);
+    border:1px solid var(--navy);padding:10px 18px;border-radius:2px;white-space:nowrap;
+  }
+
+  /* ---------- QUICK ANCHOR NAV ---------- */
+  .quicknav{padding:36px 0;border-bottom:1px solid var(--line);}
+  .quicknav-inner{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+  }
+  .quicknav a{
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    font-size:13px;font-weight:500;color:var(--navy);text-align:center;
+    padding:12px 6px;border-radius:4px;transition:background .2s ease;
+  }
+  .quicknav a:hover{background:var(--mist);}
+  .quicknav svg{width:26px;height:26px;stroke:var(--navy);}
+  @media (max-width:640px){.quicknav-inner{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- ABOUT ---------- */
+  .about{background:var(--paper);}
+  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+  .about-copy p{color:var(--ink-soft);font-size:15px;margin-bottom:14px;}
+  .about-figure{position:relative;}
+  .about-figure img{border-radius:4px;}
+  .about-figure .stat-card{
+    position:absolute;left:-28px;bottom:-28px;background:var(--navy);color:#fff;
+    padding:22px 26px;border-radius:4px;box-shadow:0 18px 30px rgba(8,37,85,.25);
+  }
+  .about-figure .stat-card b{font-family:'Noto Serif JP',serif;font-size:30px;color:var(--gold-soft);display:block;}
+  .about-figure .stat-card span{font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.8);}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;}.about-figure{margin-top:40px;}.about-figure .stat-card{left:16px;bottom:-24px;}}
+
+  /* ---------- LINEUP ---------- */
+  .lineup{background:var(--mist);}
+  .lineup-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;}
+  .lineup-card{
+    background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .lineup-card:hover{transform:translateY(-4px);box-shadow:0 16px 28px rgba(8,37,85,.1);}
+  .lineup-card .thumb{height:130px;background:linear-gradient(135deg,var(--navy),var(--navy-soft));position:relative;}
+  .lineup-card .thumb svg{position:absolute;inset:0;margin:auto;width:36px;height:36px;stroke:#fff;}
+  .lineup-card .body{padding:18px 18px 22px;}
+  .lineup-card .body h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+  .lineup-card .body p{font-size:12.5px;color:var(--ink-soft);}
+  @media (max-width:860px){.lineup-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- MERITS (circular) ---------- */
+  .merits-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;}
+  .merit-orbit{position:relative;width:100%;max-width:440px;aspect-ratio:1/1;margin:0 auto;}
+  .merit-center{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    width:150px;height:150px;border-radius:50%;background:var(--navy);color:#fff;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;font-weight:700;font-size:14px;line-height:1.5;
+    box-shadow:0 14px 30px rgba(8,37,85,.25);z-index:2;
+  }
+  .merit-node{
+    position:absolute;width:110px;height:110px;border-radius:50%;
+    background:#fff;border:1.5px solid var(--line);
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    font-size:12.5px;font-weight:700;color:var(--navy);padding:10px;line-height:1.4;
+    box-shadow:0 8px 18px rgba(8,37,85,.08);
+  }
+  .n1{top:0;left:50%;transform:translate(-50%,0);}
+  .n2{top:14%;right:0;}
+  .n3{bottom:14%;right:0;}
+  .n4{bottom:0;left:50%;transform:translate(-50%,0);}
+  .n5{bottom:14%;left:0;}
+  .n6{top:14%;left:0;}
+  .merit-list{list-style:none;}
+  .merit-list li{
+    display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);
+  }
+  .merit-list li .idx{
+    font-family:'Noto Serif JP',serif;color:var(--gold);font-weight:700;font-size:14px;flex:0 0 26px;
+  }
+  .merit-list li h4{font-size:14.5px;color:var(--navy);margin-bottom:4px;font-weight:700;}
+  .merit-list li p{font-size:12.5px;color:var(--ink-soft);}
+  @media (max-width:860px){.merits-wrap{grid-template-columns:1fr;}.merit-orbit{margin-bottom:20px;}}
+
+  /* ---------- GUIDE BANNER ---------- */
+  .guide-banner{
+    background:linear-gradient(120deg,var(--mist-deep),#fff);
+    border:1px solid var(--line);border-radius:6px;
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+    padding:34px 40px;flex-wrap:wrap;
+  }
+  .guide-banner .txt p.tag{
+    font-size:11px;color:var(--navy);font-weight:700;letter-spacing:.06em;margin-bottom:6px;
+  }
+  .guide-banner .txt h3{font-size:19px;color:var(--navy);margin-bottom:10px;}
+  .guide-banner .txt span{font-size:12px;color:var(--ink-soft);}
+
+  /* ---------- AREA INFO BANNER ---------- */
+  .area-banner{background:var(--navy);color:#fff;border-radius:6px;overflow:hidden;
+    display:grid;grid-template-columns:1fr 1fr;align-items:center;}
+  .area-banner .txt{padding:44px;}
+  .area-banner .tag{
+    display:inline-block;font-size:11px;background:rgba(255,255,255,.12);
+    padding:5px 12px;border-radius:20px;margin-bottom:14px;letter-spacing:.05em;
+  }
+  .area-banner h3{font-size:22px;line-height:1.6;margin-bottom:14px;}
+  .area-banner p{font-size:13px;color:rgba(255,255,255,.75);}
+  .area-map{
+    height:100%;min-height:260px;
+    background:var(--navy-deep);
+    position:relative;
+    overflow:hidden;
+  }
+  .area-map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+  @media (max-width:760px){.area-banner{grid-template-columns:1fr;}.area-map{min-height:220px;}}
+
+  /* ---------- WHY US ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px;}
+  .why-card h3{font-size:16px;color:var(--navy);margin:16px 0 10px;font-weight:700;}
+  .why-card p{font-size:13px;color:var(--ink-soft);}
+  .why-icon{
+    width:60px;height:60px;border-radius:50%;background:var(--mist);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .why-icon svg{width:28px;height:28px;stroke:var(--navy);}
+  @media (max-width:860px){.why-grid{grid-template-columns:1fr;}}
+
+  /* ---------- VOICE ---------- */
+  .voice{background:var(--mist);}
+  .voice-score{display:flex;align-items:center;gap:18px;margin-bottom:36px;}
+  .voice-score .num{font-family:'Noto Serif JP',serif;font-size:40px;color:var(--navy);font-weight:700;}
+  .voice-score .stars{color:var(--gold);font-size:18px;letter-spacing:2px;}
+  .voice-score .meta{font-size:12px;color:var(--ink-soft);}
+  .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .voice-card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px;}
+  .voice-card .stars-sm{color:var(--gold);font-size:13px;margin-bottom:10px;}
+  .voice-card h4{font-size:14px;color:var(--navy);margin-bottom:10px;font-weight:700;}
+  .voice-card p{font-size:12.5px;color:var(--ink-soft);margin-bottom:14px;}
+  .voice-card .who{
+    display:flex;align-items:center;gap:10px;font-size:11px;color:var(--ink-soft);
+  }
+  .avatar{
+    width:34px;height:34px;border-radius:50%;background:var(--navy-soft);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex:0 0 auto;
+  }
+  @media (max-width:860px){.voice-grid{grid-template-columns:1fr;}}
+
+  /* ---------- SERVICE LIST FOOTER SECTION ---------- */
+  .services{border-top:1px solid var(--line);}
+  .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;}
+  .services-grid h4{font-size:13px;color:var(--navy);font-weight:700;margin-bottom:14px;letter-spacing:.04em;}
+  .services-grid ul{list-style:none;}
+  .services-grid li{border-bottom:1px solid var(--line);}
+  .services-grid li a{display:flex;justify-content:space-between;padding:12px 4px;font-size:13.5px;}
+  .services-grid li a:hover{color:var(--navy);font-weight:700;}
+  @media (max-width:640px){.services-grid{grid-template-columns:1fr;}}
+
+  /* ---------- NEWS ---------- */
+  .news-list{list-style:none;margin-top:32px;}
+  .news-list li{
+    display:flex;gap:24px;padding:16px 0;border-bottom:1px solid var(--line);font-size:13.5px;align-items:baseline;
+  }
+  .news-list time{color:var(--ink-soft);font-size:12px;flex:0 0 92px;}
+  .news-list .cat{
+    flex:0 0 74px;font-size:10.5px;text-align:center;border:1px solid var(--navy);color:var(--navy);
+    border-radius:2px;padding:3px 0;font-weight:700;
+  }
+
+  /* ---------- CONTACT FORM ---------- */
+  .contact-section{background:var(--mist);}
+  .contact-form{
+    max-width:640px;margin:36px auto 0;display:grid;gap:16px;
+    background:#fff;border:1px solid var(--line);border-radius:6px;padding:32px;
+  }
+  .contact-form label{display:block;font-size:13px;font-weight:700;color:var(--navy);}
+  .contact-form label span{color:#c0392b;font-weight:700;margin-left:4px;font-size:11px;}
+  .contact-form label em{color:var(--ink-soft);font-weight:500;font-style:normal;margin-left:4px;font-size:11px;}
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea{
+    display:block;width:100%;margin-top:8px;padding:11px 12px;
+    border:1px solid var(--line);border-radius:4px;font-size:14px;font-family:inherit;color:var(--ink);
+  }
+  .contact-form input:focus,
+  .contact-form select:focus,
+  .contact-form textarea:focus{outline:2px solid var(--gold);outline-offset:1px;}
+  .contact-form .checkbox{display:flex;align-items:flex-start;gap:10px;font-size:12.5px;color:var(--ink-soft);font-weight:500;}
+  .contact-form .checkbox input{width:auto;margin-top:2px;}
+  .contact-form button{
+    justify-self:start;background:var(--gold);color:var(--navy-deep);font-weight:700;
+    padding:14px 34px;font-size:14px;border:0;border-radius:2px;cursor:pointer;letter-spacing:.05em;
+  }
+  .contact-form .form-message{font-size:13px;color:var(--navy);font-weight:700;min-height:1.4em;}
+
+  /* ---------- BOTTOM CTA ---------- */
+  .cta-final{
+    position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;
+    text-align:center;color:#fff;overflow:hidden;
+  }
+  .cta-final .bg{position:absolute;inset:0;}
+  .cta-final .bg img{width:100%;height:100%;object-fit:cover;}
+  .cta-final .bg::after{content:"";position:absolute;inset:0;background:rgba(5,25,61,.72);}
+  .cta-final .inner{position:relative;z-index:1;padding:0 24px;}
+  .cta-final h2{font-size:clamp(20px,3vw,28px);font-weight:700;margin-bottom:10px;line-height:1.7;}
+  .cta-final p{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:28px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:#fff;border-top:1px solid var(--line);padding:64px 0 30px;}
+  .footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:40px;margin-bottom:40px;}
+  .footer-brand img{height:102px;margin-bottom:16px;}
+  .footer-brand p{font-size:12px;color:var(--ink-soft);margin-bottom:18px;}
+  .sns-row{display:flex;gap:10px;}
+  .sns-row a{
+    width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .sns-row svg{width:15px;height:15px;stroke:var(--navy);}
+  .footer-grid h5{font-size:12.5px;color:var(--navy);font-weight:700;margin-bottom:14px;}
+  .footer-grid ul{list-style:none;font-size:12.5px;color:var(--ink-soft);}
+  .footer-grid li{margin-bottom:10px;}
+  .footer-bottom{
+    border-top:1px solid var(--line);padding-top:22px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:11.5px;color:#8a93a3;
+  }
+  .footer-bottom a{margin-right:18px;}
+  @media (max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "トライズエステート株式会社",
+  "url": "https://tryz-estate.pages.dev/",
+  "logo": "https://tryz-estate.pages.dev/assets/images/favicon-512.png",
+  "image": "https://tryz-estate.pages.dev/assets/images/ogp-default.png",
+  "description": "トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。",
+  "founder": {
+    "@type": "Person",
+    "name": "塩谷康晴"
+  },
+  "foundingDate": "2026-10-01",
+  "areaServed": ["岐阜県", "愛知県"]
+}
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top"><img src="assets/images/logo-horizontal.svg" alt="トライズエステート株式会社"></a>
+    <div class="header-cta">
+      <a href="#contact-form" class="btn-line">無料相談・お問い合わせ</a>
+    </div>
+    <button class="nav-toggle" type="button" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">会社について</a>
+      <a href="#lineup">サービス</a>
+      <a href="#merits">選ばれる理由</a>
+      <a href="#news">お知らせ</a>
+      <a href="#contact-form">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="hero-media">
+    <img src="assets/images/hero-gifu.webp" alt="岐阜市の街並みと金華山の眺望" width="1672" height="941" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+  <div class="wrap hero-content">
+    <div class="hero-badges">
+      <div class="badge"><b>地域密着</b>岐阜エリア専門</div>
+      <div class="badge"><b>ワンストップ</b>売買・賃貸・管理</div>
+    </div>
+    <h1 class="hero-title serif">
+      <small>TRYS ESTATE / 不動産をもっと、誠実に。</small>
+      この街の暮らしを、<br>次の世代へつなぐ不動産会社
+    </h1>
+    <p class="hero-sub">売買・賃貸・資産活用・相続まで。岐阜の土地勘と専門知識で、住まいとお金の意思決定をそばで支えます。</p>
+    <div class="hero-actions">
+      <a href="#contact-form" class="btn-gold">まずは無料相談する</a>
+      <a href="#lineup" class="btn-ghost-line">サービス一覧を見る</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIDEO PLACEHOLDER STRIP ================= -->
+<div class="video-strip">
+  <div class="video-strip-inner">
+    <div class="video-slot">動画準備中<br>ここにブランドムービーを設置</div>
+    <div class="video-strip-text">
+      <span class="tag">COMING SOON</span>
+      <p>トライズエステートの想いを伝えるムービーを制作中です</p>
+    </div>
+    <a href="#" class="video-strip-link">公開をお知らせする</a>
+  </div>
+</div>
+
+<!-- ================= QUICK ANCHOR NAV ================= -->
+<div class="quicknav">
+  <div class="wrap quicknav-inner">
+    <a href="#about">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
+      会社について
+    </a>
+    <a href="#lineup">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/></svg>
+      サービス一覧
+    </a>
+    <a href="#news">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+      お知らせ
+    </a>
+    <a href="#contact-form">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 8l8 6 8-6"/></svg>
+      お問い合わせ
+    </a>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="eyebrow">ABOUT US</span>
+      <h2 class="section-title serif">土地に根ざすから、<br>正しい判断ができる。</h2>
+      <p>トライズエステート株式会社は、岐阜エリアに拠点を置く総合不動産会社です。売買仲介・賃貸仲介・資産活用・相続相談まで、住まいにまつわる意思決定をワンストップでサポートします。</p>
+      <p>大手にはない機動力と、地域を知り尽くしたスタッフの提案力。数字だけでは測れない「暮らしやすさ」まで踏み込んでご案内することが、私たちの一番の価値だと考えています。</p>
+      <p>無理な営業は行わず、お客様にとって最適な選択肢を一緒に探すことを大切にしています。</p>
+    </div>
+    <div class="about-figure">
+      <img src="assets/images/hero-gifu.webp" alt="岐阜市街の眺め" width="1672" height="941" loading="lazy" decoding="async">
+      <div class="stat-card">
+        <b>地域密着</b>
+        <span>GIFU AREA SPECIALIST</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINEUP ================= -->
+<section class="lineup" id="lineup">
+  <div class="wrap">
+    <span class="eyebrow">SERVICE LINEUP</span>
+    <h2 class="section-title serif">暮らしとお金、<br>両方の窓口をひとつに。</h2>
+    <p class="section-lead">住まいの「はじめて」から「これから」まで。ライフステージに合わせて、必要なサービスをお選びいただけます。</p>
+    <div class="lineup-grid">
+      <div class="lineup-card">
+        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
+        <div class="body"><h3>不動産売買仲介</h3><p>戸建て・マンション・土地の売却/購入を、査定から契約まで伴走します。</p></div>
+      </div>
+      <div class="lineup-card">
+        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M9 22V12h6v10"/></svg></div>
+        <div class="body"><h3>賃貸仲介・管理</h3><p>入居者募集から契約、日々の管理業務まで一貫してサポートします。</p></div>
+      </div>
+      <div class="lineup-card">
+        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 3 5-8"/></svg></div>
+        <div class="body"><h3>不動産投資・資産活用</h3><p>収益物件の取得・運用・土地活用まで、資産形成の観点でご提案します。</p></div>
+      </div>
+      <div class="lineup-card">
+        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 5-6 8-6s7 2 8 6"/></svg></div>
+        <div class="body"><h3>相続・空き家相談</h3><p>相続不動産の整理や空き家の活用・売却まで、専門家と連携し対応します。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MERITS ================= -->
+<section id="merits">
+  <div class="wrap merits-wrap">
+    <div class="merit-orbit">
+      <div class="merit-center serif">TRYSが<br>選ばれる<br>6つの理由</div>
+      <div class="merit-node n1">地域密着の<br>土地勘</div>
+      <div class="merit-node n2">ワンストップ<br>対応</div>
+      <div class="merit-node n3">無理のない<br>ご提案</div>
+      <div class="merit-node n4">売却後まで<br>続くサポート</div>
+      <div class="merit-node n5">専門家との<br>連携体制</div>
+      <div class="merit-node n6">明朗な<br>費用説明</div>
+    </div>
+    <div>
+      <span class="eyebrow">MERITS</span>
+      <h2 class="section-title serif">選ばれているのには、理由があります。</h2>
+      <ul class="merit-list">
+        <li><span class="idx serif">01</span><div><h4>地域密着の土地勘</h4><p>岐阜エリアの相場・エリア特性を熟知したスタッフが対応します。</p></div></li>
+        <li><span class="idx serif">02</span><div><h4>ワンストップ対応</h4><p>売買・賃貸・管理・相続まで、窓口をひとつにまとめられます。</p></div></li>
+        <li><span class="idx serif">03</span><div><h4>無理のないご提案</h4><p>成約を急がせず、お客様に合った選択肢を一緒に検討します。</p></div></li>
+        <li><span class="idx serif">04</span><div><h4>売却・購入後まで続くサポート</h4><p>契約後のご相談やアフターフォローも継続してお受けします。</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GUIDE + AREA BANNERS ================= -->
+<section style="padding-top:0;">
+  <div class="wrap" style="display:grid;gap:24px;">
+    <div class="guide-banner">
+      <div class="txt">
+        <p class="tag">初めての方へ</p>
+        <h3 class="serif">不動産売却・購入 はじめてガイド</h3>
+        <span>資料請求で、費用の目安や進め方が分かる小冊子をお届けします</span>
+      </div>
+      <a href="#contact-form" class="btn-gold">資料をみてみる</a>
+    </div>
+
+    <div class="area-banner">
+      <div class="txt">
+        <span class="tag">AREA DATA</span>
+        <h3 class="serif">岐阜エリアの相場・地域情報を、<br>担当者が丁寧に解説</h3>
+        <p>駅からの距離や生活動線、将来の資産価値まで踏まえてご案内します。掲載データは公開前に最新の情報へ差し替えてください。</p>
+      </div>
+      <div class="area-map">
+        <img src="assets/images/area-map.webp" alt="岐阜エリアの不動産情報をイメージしたグラフィック" width="1672" height="941" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">WHY TRYS ESTATE</span>
+    <h2 class="section-title serif">TRYSが選ばれる理由</h2>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+        <h3>はじめてでも安心</h3>
+        <p>不動産取引がはじめての方にも、専門用語を使わず一つひとつ丁寧にご説明します。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v18M3 12h18"/></svg></div>
+        <h3>管理・運用もらくちん</h3>
+        <p>専用の連絡窓口とオンライン相談で、少ない手間で物件管理を続けられます。</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 12l6 6L20 6"/></svg></div>
+        <h3>納得できる売却・購入体験</h3>
+        <p>査定根拠や価格の考え方を開示し、ご自身で判断できる情報提供を徹底します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES LIST ================= -->
+<section class="services">
+  <div class="wrap">
+    <span class="eyebrow">SERVICES</span>
+    <h2 class="section-title serif">トライズエステートのサービス一覧</h2>
+    <div class="services-grid">
+      <div>
+        <h5>不動産をお探しの方</h5>
+        <ul>
+          <li><a href="#">売買物件を探す <span>›</span></a></li>
+          <li><a href="#">賃貸物件を探す <span>›</span></a></li>
+          <li><a href="#">土地を探す <span>›</span></a></li>
+          <li><a href="#">投資用物件を探す <span>›</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>不動産を活用したい方</h5>
+        <ul>
+          <li><a href="#">売却・査定を依頼する <span>›</span></a></li>
+          <li><a href="#">賃貸管理を相談する <span>›</span></a></li>
+          <li><a href="#">土地活用を相談する <span>›</span></a></li>
+          <li><a href="#">相続・空き家を相談する <span>›</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section id="news" style="padding-top:0;">
+  <div class="wrap">
+    <span class="eyebrow">NEWS</span>
+    <h2 class="section-title serif">お知らせ</h2>
+    <ul class="news-list">
+      <li><time datetime="2026-10-01">2026/10/01</time><span class="cat">お知らせ</span>トライズエステート株式会社設立予定のお知らせ</li>
+      <li><time datetime="2026-09-01">2026/09/01</time><span class="cat">お知らせ</span>公式ホームページを公開しました</li>
+      <li><time datetime="2026-08-01">2026/08/01</time><span class="cat">お知らせ</span>不動産買取・売却相談の受付準備中</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section class="contact-section" id="contact-form">
+  <div class="wrap">
+    <span class="eyebrow">CONTACT</span>
+    <h2 class="section-title serif">お問い合わせ・無料相談</h2>
+    <p class="section-lead">不動産の売却・買取・相続に関するご相談を承ります。まずはお気軽にお問い合わせください。</p>
+    <form class="contact-form" id="contact-form-el">
+      <label>お名前 <span>必須</span><input type="text" name="name" autocomplete="name" required></label>
+      <label>会社名 <em>任意</em><input type="text" name="company" autocomplete="organization"></label>
+      <label>電話番号 <span>必須</span><input type="tel" name="tel" autocomplete="tel" required></label>
+      <label>メールアドレス <span>必須</span><input type="email" name="email" autocomplete="email" required></label>
+      <label>お問い合わせ種別 <span>必須</span>
+        <select name="type" required>
+          <option value="">選択してください</option>
+          <option>不動産の売却について</option>
+          <option>不動産買取再販について</option>
+          <option>相続不動産について</option>
+          <option>その他</option>
+        </select>
+      </label>
+      <label>お問い合わせ内容 <span>必須</span><textarea name="message" rows="6" required></textarea></label>
+      <label class="checkbox"><input type="checkbox" name="privacy" required><span>個人情報の取り扱いに同意します</span></label>
+      <button type="submit">送信内容を確認する</button>
+      <p class="form-message" id="form-message" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<div class="cta-final">
+  <div class="bg"><img src="assets/images/hero-gifu.webp" alt="" width="1672" height="941" loading="lazy" decoding="async"></div>
+  <div class="inner">
+    <h2 class="serif">住まいのご相談は、まず一歩から。<br>トライズエステートにお任せください</h2>
+    <p>売却・買取・相続まで、無料でご相談いただけます</p>
+    <a href="#contact-form" class="btn-gold">無料相談を予約する</a>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-horizontal.svg" alt="トライズエステート株式会社">
+        <p>岐阜エリアの不動産売買・賃貸・資産活用をワンストップでサポートする総合不動産会社です。</p>
+        <div class="sns-row">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="LINE"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>サービス</h5>
+        <ul>
+          <li><a href="#lineup">不動産売買</a></li>
+          <li><a href="#lineup">賃貸仲介・管理</a></li>
+          <li><a href="#lineup">資産活用</a></li>
+          <li><a href="#lineup">相続・空き家</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>会社情報</h5>
+        <ul>
+          <li><a href="#about">会社概要</a></li>
+          <li><a href="#news">お知らせ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>お問い合わせ</h5>
+        <ul>
+          <li><a href="#">無料相談・査定</a></li>
+          <li><a href="#">よくあるご質問</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">利用規約</a>
+        <a href="#">宅地建物取引業者票</a>
+      </div>
+      <div>&copy; 2026 TRYS ESTATE Co., Ltd.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
