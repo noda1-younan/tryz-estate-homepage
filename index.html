@@ -146,7 +146,7 @@
     color:#fff;overflow:hidden;
   }
   .hero-media{position:absolute;inset:0;z-index:0;}
-  .hero-media img{width:100%;height:100%;object-fit:cover;}
+  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:68% 32%;}
   .hero-media::after{
     content:"";position:absolute;inset:0;
     background:linear-gradient(180deg, rgba(5,25,61,.15) 0%, rgba(5,25,61,.35) 55%, rgba(5,25,61,.88) 100%);
@@ -162,16 +162,21 @@
   }
   .badge b{display:block;font-size:20px;font-family:'Noto Serif JP',serif;color:var(--gold-soft);}
   .hero-title{
-    font-size:clamp(30px,4.4vw,52px);
+    font-size:clamp(28px,4.4vw,52px);
     font-weight:900;
     letter-spacing:.03em;
     line-height:1.4;
     text-shadow:0 2px 18px rgba(0,0,0,.35);
     margin-bottom:10px;
+    text-wrap:balance;
   }
   .hero-title small{
     display:block;font-size:14px;font-weight:700;letter-spacing:.32em;
     color:var(--gold-soft);margin-bottom:14px;
+    text-wrap:balance;
+  }
+  @media (max-width:480px){
+    .hero-title small{letter-spacing:.14em;font-size:12px;}
   }
   .hero-sub{font-size:14px;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:30px;}
   .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
@@ -488,7 +493,7 @@
     </div>
     <h1 class="hero-title serif">
       <small>TRYS ESTATE / 不動産をもっと、誠実に。</small>
-      この街の暮らしを、<br>次の世代へつなぐ不動産会社
+      この街の暮らしを、次の世代へつなぐ不動産会社
     </h1>
     <p class="hero-sub">売買・賃貸・資産活用・相続まで。岐阜の土地勘と専門知識で、住まいとお金の意思決定をそばで支えます。</p>
     <div class="hero-actions">
