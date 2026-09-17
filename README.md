@@ -1,17 +1,17 @@
 # トライズエステート株式会社 公式ホームページ
 
-令和8年10月1日設立予定のトライズエステート株式会社の公式ホームページです。
-地域に根ざした不動産会社としての誠実さと、公式ブランドロゴ（TRYS ESTATE）を使用した1ページ構成のサイトです。
+岐阜県・愛知県の空き家、相続不動産、農地などの売却相談に対応する、トライズエステート株式会社の公式ホームページです。
+公式ブランドロゴ（TRYS ESTATE）を使用した1ページ構成のサイトです。
 
 ## 使用技術
 
 - HTML / CSS / JavaScript（静的サイト、ビルドツールなし）
-- Googleフォント（Noto Serif JP / Noto Sans JP）を外部読み込み
+- システムフォントを使用
 - ホスティング：Cloudflare Pages（GitHub連携による自動デプロイ）
 
 ## 公開環境
 
-- 本番URL（Cloudflare Pagesの仮URL）：`https://tryz-estate.pages.dev`
+- 本番URL（Cloudflare Pages）：`https://tryz-estate-homepage.pages.dev/`
 - GitHubの`main`ブランチにpushすると、Cloudflare Pagesが自動でビルド・公開します。
 
 ## ファイル構成
@@ -24,10 +24,13 @@
 ├── sitemap.xml
 ├── _headers            # Cloudflare Pages用セキュリティヘッダー設定
 ├── favicon.ico
+├── styles.css          # サイト全体のスタイル
+├── script.js           # カルーセル・メニュー・フォーム操作
 ├── assets/
-│   ├── images/          # ロゴ、ヒーロー画像（webp）、favicon、OGP画像
-│   └── js/
-│       └── main.js      # メニュー開閉・お問い合わせフォームの仮動作
+│   ├── logo-horizontal.svg
+│   ├── hero-*.png / webp
+│   ├── office-*.jpg
+│   └── trys-estate-tora-cat-intro.mp4
 └── README.md
 ```
 
@@ -42,7 +45,7 @@ python3 -m http.server 8000
 ## 更新方法（プログラミング初心者向け）
 
 1. `index.html` 内の日本語テキスト部分だけを書き換えます（`<...>` のタグ部分は変更しないでください）。
-2. 画像を差し替える場合は `assets/images/` に新しい画像を置き、`src="assets/images/ファイル名"` を書き換えます。
+2. 画像を差し替える場合は `assets/` に新しい画像を置き、`src="assets/ファイル名"` を書き換えます。
 3. 変更を保存したら、GitHubへ commit → push してください。
 4. pushすると数十秒〜数分でCloudflare Pagesが自動的に本番サイトへ反映します。
 5. 反映後は必ず本番URLを開いて、表示が崩れていないか確認してください。

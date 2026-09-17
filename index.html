@@ -1,793 +1,642 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>トライズエステート株式会社｜地域に根ざす不動産パートナー</title>
-<meta name="description" content="トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。地域の土地勘を活かし、誠実な対応を大切にしています。">
-<link rel="canonical" href="https://tryz-estate-homepage.pages.dev/">
-<meta name="robots" content="index,follow">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png">
-<link rel="apple-touch-icon" href="/assets/images/favicon-180.png">
-<meta name="theme-color" content="#082555">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="トライズエステート株式会社">
-<meta property="og:locale" content="ja_JP">
-<meta property="og:title" content="トライズエステート株式会社｜地域に根ざす不動産パートナー">
-<meta property="og:description" content="トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。地域の土地勘を活かし、誠実な対応を大切にしています。">
-<meta property="og:url" content="https://tryz-estate-homepage.pages.dev/">
-<meta property="og:image" content="https://tryz-estate-homepage.pages.dev/assets/images/ogp-default.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="トライズエステート株式会社｜地域に根ざす不動産パートナー">
-<meta name="twitter:description" content="トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。地域の土地勘を活かし、誠実な対応を大切にしています。">
-<meta name="twitter:image" content="https://tryz-estate-homepage.pages.dev/assets/images/ogp-default.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy: #082555;
-    --navy-deep: #05193d;
-    --navy-soft: #2c4a7c;
-    --gold: #c9a45c;
-    --gold-soft: #e6d3a8;
-    --paper: #ffffff;
-    --mist: #f2f5fa;
-    --mist-deep: #e8edf5;
-    --ink: #1c2430;
-    --ink-soft: #5b6474;
-    --line: #dde3ee;
-    --radius: 4px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    font-family:'Noto Sans JP', sans-serif;
-    color:var(--ink);
-    background:var(--paper);
-    line-height:1.8;
-    -webkit-font-smoothing:antialiased;
-  }
-  img{max-width:100%;height:auto;display:block;}
-  a{color:inherit;text-decoration:none;}
-  .serif{font-family:'Noto Serif JP', serif;}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
-  .eyebrow{
-    display:inline-block;
-    font-size:12px;
-    letter-spacing:.18em;
-    font-weight:700;
-    color:var(--navy);
-    border-bottom:2px solid var(--gold);
-    padding-bottom:6px;
-    margin-bottom:18px;
-  }
-  h2.section-title{
-    font-size:clamp(24px,3vw,34px);
-    font-weight:700;
-    letter-spacing:.02em;
-    line-height:1.5;
-    color:var(--navy);
-    margin-bottom:14px;
-    text-wrap:balance;
-  }
-  .section-lead{color:var(--ink-soft);font-size:15px;max-width:640px;}
-  section{padding:88px 0;}
-  .divider-peak{
-    height:26px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    color:var(--gold);
-  }
-  .divider-peak svg{width:120px;height:16px;}
-  :focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
-  @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;}}
-
-  /* ---------- HEADER ---------- */
-  header.site-header{
-    position:sticky;top:0;z-index:100;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  .header-inner{
-    max-width:1120px;margin:0 auto;padding:14px 24px;
-    display:flex;align-items:center;justify-content:space-between;gap:24px;
-  }
-  .brand{flex-shrink:0;}
-  .brand img{height:120px;width:auto;max-width:100%;object-fit:contain;}
-  nav.main-nav{display:flex;flex-wrap:wrap;row-gap:8px;column-gap:22px;font-size:13.5px;font-weight:500;flex-shrink:1;min-width:0;justify-content:flex-end;}
-  nav.main-nav a{position:relative;padding:6px 0;color:var(--ink);white-space:nowrap;}
-  nav.main-nav a:hover{color:var(--navy);}
-  nav.main-nav a::after{
-    content:"";position:absolute;left:0;bottom:0;width:0%;height:2px;background:var(--gold);
-    transition:width .25s ease;
-  }
-  nav.main-nav a:hover::after{width:100%;}
-  .header-cta{
-    display:flex;align-items:center;gap:18px;font-size:13px;
-  }
-  .btn-line{
-    display:inline-flex;align-items:center;gap:8px;
-    background:var(--navy);color:#fff;
-    padding:11px 22px;border-radius:2px;font-weight:700;font-size:13px;
-    letter-spacing:.05em;
-    transition:background .2s ease;
-    white-space:nowrap;
-  }
-  .btn-line:hover{background:var(--navy-deep);}
-  .nav-toggle{
-    display:none;flex-direction:column;justify-content:center;gap:5px;
-    width:38px;height:38px;padding:0;border:0;background:transparent;cursor:pointer;flex-shrink:0;
-  }
-  .nav-toggle span{display:block;width:100%;height:2px;background:var(--navy);}
-  @media (max-width:860px){
-    .header-inner{position:relative;flex-wrap:wrap;padding:10px 20px;}
-    .brand img{height:44px;}
-    .nav-toggle{display:flex;order:2;margin-left:12px;}
-    .header-cta{order:1;margin-left:auto;}
-    .btn-line{padding:9px 14px;font-size:12px;}
-    nav.main-nav{
-      display:none;order:3;flex-basis:100%;
-      position:absolute;top:100%;left:0;right:0;
-      background:#fff;border:1px solid var(--line);border-top:none;
-      flex-direction:column;align-items:flex-start;row-gap:2px;
-      padding:10px 20px 16px;box-shadow:0 16px 28px rgba(8,37,85,.1);z-index:50;
-    }
-    nav.main-nav.is-open{display:flex;}
-    nav.main-nav a{padding:10px 0;width:100%;}
-  }
-
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;min-height:640px;display:flex;align-items:flex-end;
-    color:#fff;overflow:hidden;
-  }
-  .hero-media{position:absolute;inset:0;z-index:0;}
-  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:68% 32%;}
-  .hero-media::after{
-    content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg, rgba(5,25,61,.15) 0%, rgba(5,25,61,.35) 55%, rgba(5,25,61,.88) 100%);
-  }
-  .hero-content{position:relative;z-index:1;width:100%;padding-bottom:56px;}
-  .hero-badges{display:flex;gap:12px;margin-bottom:26px;flex-wrap:wrap;}
-  .badge{
-    border:1px solid rgba(255,255,255,.55);
-    border-radius:2px;
-    padding:10px 16px;
-    font-size:11px;letter-spacing:.06em;text-align:center;line-height:1.5;
-    backdrop-filter:blur(2px);
-  }
-  .badge b{display:block;font-size:20px;font-family:'Noto Serif JP',serif;color:var(--gold-soft);}
-  .hero-title{
-    font-size:clamp(28px,4.4vw,52px);
-    font-weight:900;
-    letter-spacing:.03em;
-    line-height:1.4;
-    text-shadow:0 2px 18px rgba(0,0,0,.35);
-    margin-bottom:10px;
-    text-wrap:balance;
-  }
-  .hero-title small{
-    display:block;font-size:14px;font-weight:700;letter-spacing:.32em;
-    color:var(--gold-soft);margin-bottom:14px;
-    text-wrap:balance;
-  }
-  @media (max-width:480px){
-    .hero-title small{letter-spacing:.14em;font-size:12px;}
-  }
-  .hero-sub{font-size:14px;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:30px;}
-  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
-  .btn-gold{
-    background:var(--gold);color:var(--navy-deep);font-weight:700;
-    padding:16px 34px;font-size:14px;letter-spacing:.05em;border-radius:2px;
-    box-shadow:0 10px 24px rgba(0,0,0,.25);
-    transition:transform .2s ease, box-shadow .2s ease;
-  }
-  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(0,0,0,.3);}
-  .btn-ghost-line{
-    font-size:13px;font-weight:700;color:#fff;border-bottom:1px solid rgba(255,255,255,.6);
-    padding-bottom:3px;
-  }
-  .hero-note{font-size:11px;color:rgba(255,255,255,.6);margin-top:16px;}
-
-  /* ---------- VIDEO PLACEHOLDER STRIP ---------- */
-  .video-strip{
-    background:var(--mist-deep);
-    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-  }
-  .video-strip-inner{
-    max-width:1120px;margin:0 auto;padding:18px 24px;
-    display:flex;align-items:center;gap:20px;flex-wrap:wrap;
-  }
-  .video-slot{
-    flex:0 0 220px;height:96px;
-    border:1.5px dashed #a9b6cc;border-radius:4px;
-    display:flex;align-items:center;justify-content:center;
-    color:#8592a8;font-size:11px;text-align:center;line-height:1.5;
-    background:repeating-linear-gradient(45deg, #f7f9fc, #f7f9fc 10px, #eef1f7 10px, #eef1f7 20px);
-  }
-  .video-strip-text{flex:1;min-width:220px;}
-  .video-strip-text .tag{
-    display:inline-block;background:var(--navy);color:#fff;font-size:11px;
-    padding:4px 10px;border-radius:2px;margin-bottom:6px;font-weight:700;letter-spacing:.04em;
-  }
-  .video-strip-text p{font-weight:700;color:var(--navy);font-size:15px;}
-  .video-strip-link{
-    font-size:13px;font-weight:700;color:var(--navy);
-    border:1px solid var(--navy);padding:10px 18px;border-radius:2px;white-space:nowrap;
-  }
-
-  /* ---------- QUICK ANCHOR NAV ---------- */
-  .quicknav{padding:36px 0;border-bottom:1px solid var(--line);}
-  .quicknav-inner{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
-  }
-  .quicknav a{
-    display:flex;flex-direction:column;align-items:center;gap:10px;
-    font-size:13px;font-weight:500;color:var(--navy);text-align:center;
-    padding:12px 6px;border-radius:4px;transition:background .2s ease;
-  }
-  .quicknav a:hover{background:var(--mist);}
-  .quicknav svg{width:26px;height:26px;stroke:var(--navy);}
-  @media (max-width:640px){.quicknav-inner{grid-template-columns:repeat(2,1fr);}}
-
-  /* ---------- ABOUT ---------- */
-  .about{background:var(--paper);}
-  .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
-  .about-copy p{color:var(--ink-soft);font-size:15px;margin-bottom:14px;}
-  .about-figure{position:relative;}
-  .about-figure img{width:100%;height:auto;border-radius:4px;}
-  .about-figure .stat-card{
-    position:absolute;left:-28px;bottom:-28px;background:var(--navy);color:#fff;
-    padding:22px 26px;border-radius:4px;box-shadow:0 18px 30px rgba(8,37,85,.25);
-  }
-  .about-figure .stat-card b{font-family:'Noto Serif JP',serif;font-size:30px;color:var(--gold-soft);display:block;}
-  .about-figure .stat-card span{font-size:11px;letter-spacing:.05em;color:rgba(255,255,255,.8);}
-  @media (max-width:860px){.about-grid{grid-template-columns:1fr;}.about-figure{margin-top:40px;}.about-figure .stat-card{left:16px;bottom:-24px;}}
-
-  /* ---------- LINEUP ---------- */
-  .lineup{background:var(--mist);}
-  .lineup-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px;}
-  .lineup-card{
-    background:#fff;border:1px solid var(--line);border-radius:4px;overflow:hidden;
-    transition:transform .25s ease, box-shadow .25s ease;
-  }
-  .lineup-card:hover{transform:translateY(-4px);box-shadow:0 16px 28px rgba(8,37,85,.1);}
-  .lineup-card .thumb{height:130px;background:linear-gradient(135deg,var(--navy),var(--navy-soft));position:relative;}
-  .lineup-card .thumb svg{position:absolute;inset:0;margin:auto;width:36px;height:36px;stroke:#fff;}
-  .lineup-card .body{padding:18px 18px 22px;}
-  .lineup-card .body h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px;}
-  .lineup-card .body p{font-size:12.5px;color:var(--ink-soft);}
-  @media (max-width:860px){.lineup-grid{grid-template-columns:repeat(2,1fr);}}
-
-  /* ---------- MERITS (circular) ---------- */
-  .merits-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center;}
-  .merit-orbit{position:relative;width:100%;max-width:440px;aspect-ratio:1/1;margin:0 auto;}
-  .merit-center{
-    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-    width:150px;height:150px;border-radius:50%;background:var(--navy);color:#fff;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;font-weight:700;font-size:14px;line-height:1.5;
-    box-shadow:0 14px 30px rgba(8,37,85,.25);z-index:2;
-  }
-  .merit-node{
-    position:absolute;width:110px;height:110px;border-radius:50%;
-    background:#fff;border:1.5px solid var(--line);
-    display:flex;align-items:center;justify-content:center;text-align:center;
-    font-size:12.5px;font-weight:700;color:var(--navy);padding:10px;line-height:1.4;
-    box-shadow:0 8px 18px rgba(8,37,85,.08);
-  }
-  .n1{top:0;left:50%;transform:translate(-50%,0);}
-  .n2{top:14%;right:0;}
-  .n3{bottom:14%;right:0;}
-  .n4{bottom:0;left:50%;transform:translate(-50%,0);}
-  .n5{bottom:14%;left:0;}
-  .n6{top:14%;left:0;}
-  .merit-list{list-style:none;}
-  .merit-list li{
-    display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);
-  }
-  .merit-list li .idx{
-    font-family:'Noto Serif JP',serif;color:var(--gold);font-weight:700;font-size:14px;flex:0 0 26px;
-  }
-  .merit-list li h4{font-size:14.5px;color:var(--navy);margin-bottom:4px;font-weight:700;}
-  .merit-list li p{font-size:12.5px;color:var(--ink-soft);}
-  @media (max-width:860px){.merits-wrap{grid-template-columns:1fr;}.merit-orbit{margin-bottom:20px;}}
-
-  /* ---------- GUIDE BANNER ---------- */
-  .guide-banner{
-    background:linear-gradient(120deg,var(--mist-deep),#fff);
-    border:1px solid var(--line);border-radius:6px;
-    display:flex;align-items:center;justify-content:space-between;gap:24px;
-    padding:34px 40px;flex-wrap:wrap;
-  }
-  .guide-banner .txt p.tag{
-    font-size:11px;color:var(--navy);font-weight:700;letter-spacing:.06em;margin-bottom:6px;
-  }
-  .guide-banner .txt h3{font-size:19px;color:var(--navy);margin-bottom:10px;}
-  .guide-banner .txt span{font-size:12px;color:var(--ink-soft);}
-
-  /* ---------- AREA INFO BANNER ---------- */
-  .area-banner{background:var(--navy);color:#fff;border-radius:6px;overflow:hidden;
-    display:grid;grid-template-columns:1fr 1fr;align-items:center;}
-  .area-banner .txt{padding:44px;}
-  .area-banner .tag{
-    display:inline-block;font-size:11px;background:rgba(255,255,255,.12);
-    padding:5px 12px;border-radius:20px;margin-bottom:14px;letter-spacing:.05em;
-  }
-  .area-banner h3{font-size:22px;line-height:1.6;margin-bottom:14px;text-wrap:balance;}
-  .area-banner p{font-size:13px;color:rgba(255,255,255,.75);}
-  .area-map{
-    height:100%;min-height:260px;
-    background:var(--navy-deep);
-    position:relative;
-    overflow:hidden;
-  }
-  .area-map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  @media (max-width:760px){.area-banner{grid-template-columns:1fr;}.area-map{min-height:220px;}}
-
-  /* ---------- WHY US ---------- */
-  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px;}
-  .why-card h3{font-size:16px;color:var(--navy);margin:16px 0 10px;font-weight:700;}
-  .why-card p{font-size:13px;color:var(--ink-soft);}
-  .why-icon{
-    width:60px;height:60px;border-radius:50%;background:var(--mist);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .why-icon svg{width:28px;height:28px;stroke:var(--navy);}
-  @media (max-width:860px){.why-grid{grid-template-columns:1fr;}}
-
-  /* ---------- VOICE ---------- */
-  .voice{background:var(--mist);}
-  .voice-score{display:flex;align-items:center;gap:18px;margin-bottom:36px;}
-  .voice-score .num{font-family:'Noto Serif JP',serif;font-size:40px;color:var(--navy);font-weight:700;}
-  .voice-score .stars{color:var(--gold);font-size:18px;letter-spacing:2px;}
-  .voice-score .meta{font-size:12px;color:var(--ink-soft);}
-  .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  .voice-card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px;}
-  .voice-card .stars-sm{color:var(--gold);font-size:13px;margin-bottom:10px;}
-  .voice-card h4{font-size:14px;color:var(--navy);margin-bottom:10px;font-weight:700;}
-  .voice-card p{font-size:12.5px;color:var(--ink-soft);margin-bottom:14px;}
-  .voice-card .who{
-    display:flex;align-items:center;gap:10px;font-size:11px;color:var(--ink-soft);
-  }
-  .avatar{
-    width:34px;height:34px;border-radius:50%;background:var(--navy-soft);color:#fff;
-    display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex:0 0 auto;
-  }
-  @media (max-width:860px){.voice-grid{grid-template-columns:1fr;}}
-
-  /* ---------- SERVICE LIST FOOTER SECTION ---------- */
-  .services{border-top:1px solid var(--line);}
-  .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;}
-  .services-grid h4{font-size:13px;color:var(--navy);font-weight:700;margin-bottom:14px;letter-spacing:.04em;}
-  .services-grid ul{list-style:none;}
-  .services-grid li{border-bottom:1px solid var(--line);}
-  .services-grid li a{display:flex;justify-content:space-between;padding:12px 4px;font-size:13.5px;}
-  .services-grid li a:hover{color:var(--navy);font-weight:700;}
-  @media (max-width:640px){.services-grid{grid-template-columns:1fr;}}
-
-  /* ---------- NEWS ---------- */
-  .news-list{list-style:none;margin-top:32px;}
-  .news-list li{
-    display:flex;gap:24px;padding:16px 0;border-bottom:1px solid var(--line);font-size:13.5px;align-items:baseline;
-  }
-  .news-list time{color:var(--ink-soft);font-size:12px;flex:0 0 92px;}
-  .news-list .cat{
-    flex:0 0 74px;font-size:10.5px;text-align:center;border:1px solid var(--navy);color:var(--navy);
-    border-radius:2px;padding:3px 0;font-weight:700;
-  }
-
-  /* ---------- CONTACT FORM ---------- */
-  .contact-section{background:var(--mist);}
-  .contact-form{
-    max-width:640px;margin:36px auto 0;display:grid;gap:16px;
-    background:#fff;border:1px solid var(--line);border-radius:6px;padding:32px;
-  }
-  .contact-form label{display:block;font-size:13px;font-weight:700;color:var(--navy);}
-  .contact-form label span{color:#c0392b;font-weight:700;margin-left:4px;font-size:11px;}
-  .contact-form label em{color:var(--ink-soft);font-weight:500;font-style:normal;margin-left:4px;font-size:11px;}
-  .contact-form input,
-  .contact-form select,
-  .contact-form textarea{
-    display:block;width:100%;margin-top:8px;padding:11px 12px;
-    border:1px solid var(--line);border-radius:4px;font-size:14px;font-family:inherit;color:var(--ink);
-  }
-  .contact-form input:focus,
-  .contact-form select:focus,
-  .contact-form textarea:focus{outline:2px solid var(--gold);outline-offset:1px;}
-  .contact-form .checkbox{display:flex;align-items:flex-start;gap:10px;font-size:12.5px;color:var(--ink-soft);font-weight:500;}
-  .contact-form .checkbox input{width:auto;margin-top:2px;}
-  .contact-form button{
-    justify-self:start;background:var(--gold);color:var(--navy-deep);font-weight:700;
-    padding:14px 34px;font-size:14px;border:0;border-radius:2px;cursor:pointer;letter-spacing:.05em;
-  }
-  .contact-form .form-message{font-size:13px;color:var(--navy);font-weight:700;min-height:1.4em;}
-
-  /* ---------- BOTTOM CTA ---------- */
-  .cta-final{
-    position:relative;min-height:340px;display:flex;align-items:center;justify-content:center;
-    text-align:center;color:#fff;overflow:hidden;
-  }
-  .cta-final .bg{position:absolute;inset:0;}
-  .cta-final .bg img{width:100%;height:100%;object-fit:cover;}
-  .cta-final .bg::after{content:"";position:absolute;inset:0;background:rgba(5,25,61,.72);}
-  .cta-final .inner{position:relative;z-index:1;padding:0 24px;}
-  .cta-final h2{font-size:clamp(20px,3vw,28px);font-weight:700;margin-bottom:10px;line-height:1.7;text-wrap:balance;}
-  .cta-final p{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:28px;}
-
-  /* ---------- FOOTER ---------- */
-  footer{background:#fff;border-top:1px solid var(--line);padding:64px 0 30px;}
-  .footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:40px;margin-bottom:40px;}
-  .footer-brand img{height:102px;width:auto;max-width:100%;margin-bottom:16px;object-fit:contain;}
-  .footer-brand p{font-size:12px;color:var(--ink-soft);margin-bottom:18px;}
-  .sns-row{display:flex;gap:10px;}
-  .sns-row a{
-    width:32px;height:32px;border-radius:50%;border:1px solid var(--line);
-    display:flex;align-items:center;justify-content:center;
-  }
-  .sns-row svg{width:15px;height:15px;stroke:var(--navy);}
-  .footer-grid h5{font-size:12.5px;color:var(--navy);font-weight:700;margin-bottom:14px;}
-  .footer-grid ul{list-style:none;font-size:12.5px;color:var(--ink-soft);}
-  .footer-grid li{margin-bottom:10px;}
-  .footer-bottom{
-    border-top:1px solid var(--line);padding-top:22px;
-    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
-    font-size:11.5px;color:#8a93a3;
-  }
-  .footer-bottom a{margin-right:18px;}
-  @media (max-width:860px){.footer-grid{grid-template-columns:1fr 1fr;}}
-</style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "トライズエステート株式会社",
-  "url": "https://tryz-estate-homepage.pages.dev/",
-  "logo": "https://tryz-estate-homepage.pages.dev/assets/images/favicon-512.png",
-  "image": "https://tryz-estate-homepage.pages.dev/assets/images/ogp-default.png",
-  "description": "トライズエステート株式会社は、岐阜エリアを中心に不動産の売買・買取再販・相続相談に取り組む不動産会社です。",
-  "founder": {
-    "@type": "Person",
-    "name": "塩谷康晴"
-  },
-  "foundingDate": "2026-10-01",
-  "areaServed": ["岐阜県", "愛知県"]
-}
-</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="岐阜県・愛知県の空き家、相続不動産、農地など、売却に困る不動産の相談窓口。トライズエステート株式会社が状況に合う買取・売却方法を一緒に考えます。">
+  <meta name="theme-color" content="#071d45">
+  <title>岐阜・愛知 お困り不動産買取所｜トライズエステート株式会社</title>
+  <link rel="icon" href="assets/logo-horizontal.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">本文へ移動</a>
 
-<!-- ================= HEADER ================= -->
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="#top"><img src="assets/images/logo-horizontal.svg" alt="トライズエステート株式会社"></a>
-    <div class="header-cta">
-      <a href="#contact-form" class="btn-line">無料相談・お問い合わせ</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="トライズエステート株式会社 トップへ">
+        <img src="assets/logo-horizontal.svg" alt="TRYS ESTATE トライズエステート株式会社" width="245" height="64">
+      </a>
+      <nav class="desktop-nav" aria-label="メインメニュー">
+        <a href="#properties">対象不動産</a>
+        <a href="#strengths">選ばれる考え方</a>
+        <a href="#flow">売却の流れ</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#company">会社情報</a>
+      </nav>
+      <a class="button button-gold header-cta" href="#contact">無料相談</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span><span class="sr-only">メニューを開く</span>
+      </button>
     </div>
-    <button class="nav-toggle" type="button" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="メニュー">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="main-nav" id="main-nav">
-      <a href="#about">会社について</a>
-      <a href="#lineup">サービス</a>
-      <a href="#merits">選ばれる理由</a>
-      <a href="#news">お知らせ</a>
-      <a href="#contact-form">お問い合わせ</a>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="スマートフォンメニュー" hidden>
+      <a href="#properties">対象不動産</a>
+      <a href="#choices">相談内容を選ぶ</a>
+      <a href="#flow">売却の流れ</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#company">会社情報</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="top">
-  <div class="hero-media">
-    <img src="assets/images/hero-gifu.webp" alt="岐阜市の街並みと金華山の眺望" width="1672" height="941" loading="eager" fetchpriority="high" decoding="async">
-  </div>
-  <div class="wrap hero-content">
-    <div class="hero-badges">
-      <div class="badge"><b>地域密着</b>岐阜エリア専門</div>
-      <div class="badge"><b>ワンストップ</b>売買・賃貸・管理</div>
-    </div>
-    <h1 class="hero-title serif">
-      <small>TRYS ESTATE / 不動産をもっと、誠実に。</small>
-      この街の暮らしを、次の世代へつなぐ不動産会社
-    </h1>
-    <p class="hero-sub">売買・賃貸・資産活用・相続まで。岐阜の土地勘と専門知識で、住まいとお金の意思決定をそばで支えます。</p>
-    <div class="hero-actions">
-      <a href="#contact-form" class="btn-gold">まずは無料相談する</a>
-      <a href="#lineup" class="btn-ghost-line">サービス一覧を見る</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= VIDEO PLACEHOLDER STRIP ================= -->
-<div class="video-strip">
-  <div class="video-strip-inner">
-    <div class="video-slot">動画準備中<br>ここにブランドムービーを設置</div>
-    <div class="video-strip-text">
-      <span class="tag">COMING SOON</span>
-      <p>トライズエステートの想いを伝えるムービーを制作中です</p>
-    </div>
-    <a href="#" class="video-strip-link">公開をお知らせする</a>
-  </div>
-</div>
-
-<!-- ================= QUICK ANCHOR NAV ================= -->
-<div class="quicknav">
-  <div class="wrap quicknav-inner">
-    <a href="#about">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
-      会社について
-    </a>
-    <a href="#lineup">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18"/></svg>
-      サービス一覧
-    </a>
-    <a href="#news">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-      お知らせ
-    </a>
-    <a href="#contact-form">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 8l8 6 8-6"/></svg>
-      お問い合わせ
-    </a>
-  </div>
-</div>
-
-<!-- ================= ABOUT ================= -->
-<section class="about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-copy">
-      <span class="eyebrow">ABOUT US</span>
-      <h2 class="section-title serif">土地に根ざすから、<br>正しい判断ができる。</h2>
-      <p>トライズエステート株式会社は、岐阜エリアに拠点を置く総合不動産会社です。売買仲介・賃貸仲介・資産活用・相続相談まで、住まいにまつわる意思決定をワンストップでサポートします。</p>
-      <p>大手にはない機動力と、地域を知り尽くしたスタッフの提案力。数字だけでは測れない「暮らしやすさ」まで踏み込んでご案内することが、私たちの一番の価値だと考えています。</p>
-      <p>無理な営業は行わず、お客様にとって最適な選択肢を一緒に探すことを大切にしています。</p>
-    </div>
-    <div class="about-figure">
-      <img src="assets/images/hero-gifu.webp" alt="岐阜市街の眺め" width="1672" height="941" loading="lazy" decoding="async">
-      <div class="stat-card">
-        <b>地域密着</b>
-        <span>GIFU AREA SPECIALIST</span>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">岐阜県・愛知県の不動産売却相談</p>
+        <h1 id="hero-title">岐阜・愛知<br><span>お困り不動産買取所</span></h1>
+        <p class="hero-lead">空き家・相続不動産・農地の<br class="desktop-only">売却相談</p>
+        <p class="hero-description">売れにくい理由ごと、買取・売却方法を考えます。<br>岐阜県・愛知県、どちらの不動産にも対応します。</p>
+        <div class="operator">
+          <strong>by TRYS ESTATE</strong>
+          <span>運営：トライズエステート株式会社</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-gold button-large" href="#contact">無料で相談・査定する <span aria-hidden="true">→</span></a>
+          <a class="button button-outline button-large" href="#choices">相談内容を選ぶ <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="microcopy">相談だけでも大丈夫です。わからない状態から一緒に整理します。</p>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ================= LINEUP ================= -->
-<section class="lineup" id="lineup">
-  <div class="wrap">
-    <span class="eyebrow">SERVICE LINEUP</span>
-    <h2 class="section-title serif">暮らしとお金、<br>両方の窓口をひとつに。</h2>
-    <p class="section-lead">住まいの「はじめて」から「これから」まで。ライフステージに合わせて、必要なサービスをお選びいただけます。</p>
-    <div class="lineup-grid">
-      <div class="lineup-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></div>
-        <div class="body"><h3>不動産売買仲介</h3><p>戸建て・マンション・土地の売却/購入を、査定から契約まで伴走します。</p></div>
-      </div>
-      <div class="lineup-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M9 22V12h6v10"/></svg></div>
-        <div class="body"><h3>賃貸仲介・管理</h3><p>入居者募集から契約、日々の管理業務まで一貫してサポートします。</p></div>
-      </div>
-      <div class="lineup-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 3 5-8"/></svg></div>
-        <div class="body"><h3>不動産投資・資産活用</h3><p>収益物件の取得・運用・土地活用まで、資産形成の観点でご提案します。</p></div>
-      </div>
-      <div class="lineup-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 5-6 8-6s7 2 8 6"/></svg></div>
-        <div class="body"><h3>相続・空き家相談</h3><p>相続不動産の整理や空き家の活用・売却まで、専門家と連携し対応します。</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= MERITS ================= -->
-<section id="merits">
-  <div class="wrap merits-wrap">
-    <div class="merit-orbit">
-      <div class="merit-center serif">TRYSが<br>選ばれる<br>6つの理由</div>
-      <div class="merit-node n1">地域密着の<br>土地勘</div>
-      <div class="merit-node n2">ワンストップ<br>対応</div>
-      <div class="merit-node n3">無理のない<br>ご提案</div>
-      <div class="merit-node n4">売却後まで<br>続くサポート</div>
-      <div class="merit-node n5">専門家との<br>連携体制</div>
-      <div class="merit-node n6">明朗な<br>費用説明</div>
-    </div>
-    <div>
-      <span class="eyebrow">MERITS</span>
-      <h2 class="section-title serif">選ばれているのには、理由があります。</h2>
-      <ul class="merit-list">
-        <li><span class="idx serif">01</span><div><h4>地域密着の土地勘</h4><p>岐阜エリアの相場・エリア特性を熟知したスタッフが対応します。</p></div></li>
-        <li><span class="idx serif">02</span><div><h4>ワンストップ対応</h4><p>売買・賃貸・管理・相続まで、窓口をひとつにまとめられます。</p></div></li>
-        <li><span class="idx serif">03</span><div><h4>無理のないご提案</h4><p>成約を急がせず、お客様に合った選択肢を一緒に検討します。</p></div></li>
-        <li><span class="idx serif">04</span><div><h4>売却・購入後まで続くサポート</h4><p>契約後のご相談やアフターフォローも継続してお受けします。</p></div></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GUIDE + AREA BANNERS ================= -->
-<section style="padding-top:0;">
-  <div class="wrap" style="display:grid;gap:24px;">
-    <div class="guide-banner">
-      <div class="txt">
-        <p class="tag">初めての方へ</p>
-        <h3 class="serif">不動産売却・購入 はじめてガイド</h3>
-        <span>資料請求で、費用の目安や進め方が分かる小冊子をお届けします</span>
-      </div>
-      <a href="#contact-form" class="btn-gold">資料をみてみる</a>
-    </div>
-
-    <div class="area-banner">
-      <div class="txt">
-        <span class="tag">AREA DATA</span>
-        <h3 class="serif">岐阜エリアの相場・地域情報を、担当者が丁寧に解説</h3>
-        <p>駅からの距離や生活動線、将来の資産価値まで踏まえてご案内します。掲載データは公開前に最新の情報へ差し替えてください。</p>
-      </div>
-      <div class="area-map">
-        <img src="assets/images/area-map.webp" alt="岐阜エリアの不動産情報をイメージしたグラフィック" width="1672" height="941" loading="lazy" decoding="async">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= WHY US ================= -->
-<section>
-  <div class="wrap">
-    <span class="eyebrow">WHY TRYS ESTATE</span>
-    <h2 class="section-title serif">TRYSが選ばれる理由</h2>
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
-        <h3>はじめてでも安心</h3>
-        <p>不動産取引がはじめての方にも、専門用語を使わず一つひとつ丁寧にご説明します。</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v18M3 12h18"/></svg></div>
-        <h3>管理・運用もらくちん</h3>
-        <p>専用の連絡窓口とオンライン相談で、少ない手間で物件管理を続けられます。</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 12l6 6L20 6"/></svg></div>
-        <h3>納得できる売却・購入体験</h3>
-        <p>査定根拠や価格の考え方を開示し、ご自身で判断できる情報提供を徹底します。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SERVICES LIST ================= -->
-<section class="services">
-  <div class="wrap">
-    <span class="eyebrow">SERVICES</span>
-    <h2 class="section-title serif">トライズエステートのサービス一覧</h2>
-    <div class="services-grid">
-      <div>
-        <h5>不動産をお探しの方</h5>
-        <ul>
-          <li><a href="#">売買物件を探す <span>›</span></a></li>
-          <li><a href="#">賃貸物件を探す <span>›</span></a></li>
-          <li><a href="#">土地を探す <span>›</span></a></li>
-          <li><a href="#">投資用物件を探す <span>›</span></a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>不動産を活用したい方</h5>
-        <ul>
-          <li><a href="#">売却・査定を依頼する <span>›</span></a></li>
-          <li><a href="#">賃貸管理を相談する <span>›</span></a></li>
-          <li><a href="#">土地活用を相談する <span>›</span></a></li>
-          <li><a href="#">相続・空き家を相談する <span>›</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= NEWS ================= -->
-<section id="news" style="padding-top:0;">
-  <div class="wrap">
-    <span class="eyebrow">NEWS</span>
-    <h2 class="section-title serif">お知らせ</h2>
-    <ul class="news-list">
-      <li><time datetime="2026-10-01">2026/10/01</time><span class="cat">お知らせ</span>トライズエステート株式会社設立予定のお知らせ</li>
-      <li><time datetime="2026-09-01">2026/09/01</time><span class="cat">お知らせ</span>公式ホームページを公開しました</li>
-      <li><time datetime="2026-08-01">2026/08/01</time><span class="cat">お知らせ</span>不動産買取・売却相談の受付準備中</li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= CONTACT FORM ================= -->
-<section class="contact-section" id="contact-form">
-  <div class="wrap">
-    <span class="eyebrow">CONTACT</span>
-    <h2 class="section-title serif">お問い合わせ・無料相談</h2>
-    <p class="section-lead">不動産の売却・買取・相続に関するご相談を承ります。まずはお気軽にお問い合わせください。</p>
-    <form class="contact-form" id="contact-form-el">
-      <label>お名前 <span>必須</span><input type="text" name="name" autocomplete="name" required></label>
-      <label>会社名 <em>任意</em><input type="text" name="company" autocomplete="organization"></label>
-      <label>電話番号 <span>必須</span><input type="tel" name="tel" autocomplete="tel" required></label>
-      <label>メールアドレス <span>必須</span><input type="email" name="email" autocomplete="email" required></label>
-      <label>お問い合わせ種別 <span>必須</span>
-        <select name="type" required>
-          <option value="">選択してください</option>
-          <option>不動産の売却について</option>
-          <option>不動産買取再販について</option>
-          <option>相続不動産について</option>
-          <option>その他</option>
-        </select>
-      </label>
-      <label>お問い合わせ内容 <span>必須</span><textarea name="message" rows="6" required></textarea></label>
-      <label class="checkbox"><input type="checkbox" name="privacy" required><span>個人情報の取り扱いに同意します</span></label>
-      <button type="submit">送信内容を確認する</button>
-      <p class="form-message" id="form-message" role="status"></p>
-    </form>
-  </div>
-</section>
-
-<!-- ================= FINAL CTA ================= -->
-<div class="cta-final">
-  <div class="bg"><img src="assets/images/hero-gifu.webp" alt="" width="1672" height="941" loading="lazy" decoding="async"></div>
-  <div class="inner">
-    <h2 class="serif">住まいのご相談は、まず一歩から。トライズエステートにお任せください</h2>
-    <p>売却・買取・相続まで、無料でご相談いただけます</p>
-    <a href="#contact-form" class="btn-gold">無料相談を予約する</a>
-  </div>
-</div>
-
-<!-- ================= FOOTER ================= -->
-<footer id="contact">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/images/logo-horizontal.svg" alt="トライズエステート株式会社">
-        <p>岐阜エリアの不動産売買・賃貸・資産活用をワンストップでサポートする総合不動産会社です。</p>
-        <div class="sns-row">
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
-          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
-          <a href="#" aria-label="LINE"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></a>
+      <div class="hero-carousel" data-carousel aria-label="相談できる不動産のイメージ">
+        <div class="carousel-viewport" aria-live="polite">
+          <figure class="carousel-slide is-active" data-slide aria-hidden="false">
+            <img src="assets/hero-akiya-aichi.png" alt="愛知県の都市近郊をイメージした空き家" fetchpriority="high">
+            <figcaption><span>空き家</span><strong>愛知・都市近郊</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-akiya-gifu.png" alt="岐阜市の市街地近郊をイメージした空き家" loading="lazy">
+            <figcaption><span>空き家</span><strong>岐阜・市街地近郊</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-akiya-user-photo.webp" alt="外壁や設備が古くなった空き家の参考写真" loading="lazy">
+            <figcaption><span>空き家</span><strong>老朽化した古家など</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-souzoku.png" alt="相続した住宅をイメージした写真" loading="lazy">
+            <figcaption><span>相続不動産</span><strong>住む予定のない実家など</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-nouchi.png" alt="住宅地に隣接する農地をイメージした写真" loading="lazy">
+            <figcaption><span>農地</span><strong>管理や今後の活用に困る土地</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-zanchibutsu-user-photo.webp" alt="家の周囲に家財や残置物が多く残る住宅の参考写真" loading="lazy">
+            <figcaption><span>ゴミ屋敷・残置物</span><strong>片付け前でも相談できます</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-jikobukken.png" alt="事情のある住宅をイメージした写真" loading="lazy">
+            <figcaption><span>事故物件</span><strong>事情を伏せずにご相談ください</strong></figcaption>
+          </figure>
+          <figure class="carousel-slide" data-slide aria-hidden="true">
+            <img src="assets/hero-urenai-tochi.png" alt="活用や売却が難しい土地をイメージした写真" loading="lazy">
+            <figcaption><span>売れにくい土地</span><strong>形状や条件も含めて確認</strong></figcaption>
+          </figure>
+        </div>
+        <div class="carousel-controls">
+          <button type="button" class="carousel-arrow" data-prev aria-label="前の画像へ">←</button>
+          <div class="carousel-dots" role="tablist" aria-label="画像を選択"></div>
+          <button type="button" class="carousel-arrow" data-next aria-label="次の画像へ">→</button>
+          <button type="button" class="carousel-pause" data-pause aria-pressed="false"><span aria-hidden="true">Ⅱ</span><span class="pause-label">停止</span></button>
         </div>
       </div>
-      <div>
-        <h5>サービス</h5>
-        <ul>
-          <li><a href="#lineup">不動産売買</a></li>
-          <li><a href="#lineup">賃貸仲介・管理</a></li>
-          <li><a href="#lineup">資産活用</a></li>
-          <li><a href="#lineup">相続・空き家</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>会社情報</h5>
-        <ul>
-          <li><a href="#about">会社概要</a></li>
-          <li><a href="#news">お知らせ</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>お問い合わせ</h5>
-        <ul>
-          <li><a href="#">無料相談・査定</a></li>
-          <li><a href="#">よくあるご質問</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div>
-        <a href="#">プライバシーポリシー</a>
-        <a href="#">利用規約</a>
-        <a href="#">宅地建物取引業者票</a>
-      </div>
-      <div>&copy; 2026 TRYS ESTATE Co., Ltd.</div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script src="assets/js/main.js" defer></script>
+    <div class="trust-strip" aria-label="相談時の基本方針">
+      <div><span aria-hidden="true">◇</span><strong>岐阜・愛知</strong><small>どちらも対応</small></div>
+      <div><span aria-hidden="true">◇</span><strong>相談から</strong><small>売るか未定でも可</small></div>
+      <div><span aria-hidden="true">◇</span><strong>秘密を守る</strong><small>相談内容は慎重に取扱い</small></div>
+    </div>
+
+    <section class="section worry-section" aria-labelledby="worry-title">
+      <div class="section-heading">
+        <p class="eyebrow">こんなお悩みはありませんか？</p>
+        <h2 id="worry-title">理由が複雑でも、<br>まず状況をお聞かせください。</h2>
+      </div>
+      <div class="worry-layout">
+        <div class="worry-art">
+          <img src="assets/worry-owners.png" alt="不動産について悩む人々のイラスト" loading="lazy">
+        </div>
+        <div class="speech-list">
+          <p class="speech speech-one">相続した実家を<br><strong>どうすればいいかわからない</strong></p>
+          <p class="speech speech-two">使っていない農地の<br><strong>管理が負担になってきた</strong></p>
+          <p class="speech speech-three">荷物が残ったままで<br><strong>片付けから進められない</strong></p>
+          <p class="speech speech-four">他社に相談したが<br><strong>話が進まなかった</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-mist" id="properties" aria-labelledby="properties-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">対象となる不動産</p>
+        <h2 id="properties-title">例えば、このような不動産をご相談いただけます。</h2>
+        <p>物件の状態を整えてからでなくても構いません。現状をそのままお伝えください。</p>
+      </div>
+      <div class="property-grid">
+        <article class="property-card property-primary">
+          <span class="property-no">01</span>
+          <div class="property-icon property-icon-vacant" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <ellipse class="icon-shadow" cx="32" cy="54" rx="23" ry="4" fill="#071d45" opacity=".14"/>
+              <path d="m8 40 23-14 25 14-24 14z" fill="#e5e8ec" opacity=".82"/>
+              <path d="m14 28 18-11 18 10-18 12z" fill="#0b2d61" class="icon-line"/>
+              <path d="m14 28 18 11v15L14 43z" fill="#f5edda" class="icon-line"/>
+              <path d="m32 39 18-12v16L32 54z" fill="#d6ba73" class="icon-line"/>
+              <path d="m10 28 21-14 23 13-4 3-19-10-17 11z" fill="#31588d" class="icon-line"/>
+              <path d="m18 34 8 5v7l-8-5z" fill="#eef2f6" class="icon-line"/>
+              <path d="m20 36 4 2.5" fill="none" class="icon-line" opacity=".55"/>
+              <g class="icon-motion icon-door">
+                <path d="m36 40 8-5v13l-8 5z" fill="#071d45" class="icon-line"/>
+                <path d="m38 41 4-2.5v9L38 50z" fill="#31588d" opacity=".65"/>
+                <circle cx="42.2" cy="43.4" r=".8" fill="#e8d39e"/>
+              </g>
+              <path d="m48 47 5 2.8-5 3" fill="none" class="icon-line" opacity=".45"/>
+            </svg>
+          </div>
+          <h3>空き家</h3>
+          <p>長く使っていない家、遠方にある家、管理が難しい家。</p>
+        </article>
+        <article class="property-card property-primary">
+          <span class="property-no">02</span>
+          <div class="property-icon property-icon-inheritance" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <ellipse class="icon-shadow" cx="31" cy="54" rx="24" ry="4" fill="#071d45" opacity=".14"/>
+              <path d="m7 41 20-12 22 12-21 13z" fill="#e5e8ec" opacity=".82"/>
+              <path d="m10 30 16-10 17 9-16 11z" fill="#0b2d61" class="icon-line"/>
+              <path d="m10 30 17 10v13L10 43z" fill="#f5edda" class="icon-line"/>
+              <path d="m27 40 16-11v13L27 53z" fill="#d6ba73" class="icon-line"/>
+              <path d="m7 30 19-13 21 12-4 3-17-9-16 10z" fill="#31588d" class="icon-line"/>
+              <path d="m14 35 7 4v6l-7-4z" fill="#eef2f6" class="icon-line"/>
+              <path d="m31 41 7-4v11l-7 4z" fill="#071d45" class="icon-line"/>
+              <path d="m33 50 8 4 12-7" fill="none" class="icon-line" opacity=".48"/>
+              <g class="icon-motion icon-key">
+                <circle cx="48" cy="35" r="4" fill="#f5edda" class="icon-line"/>
+                <circle cx="48" cy="35" r="1.45" fill="none" class="icon-line"/>
+                <path d="m45 38-7 7 2.7 2.7 2.2-2.2 1.7 1.7 2.3-2.3-1.7-1.7 2.8-2.8" fill="#d6ba73" class="icon-line"/>
+              </g>
+            </svg>
+          </div>
+          <h3>相続不動産</h3>
+          <p>相続した実家や土地。名義や今後の方針から整理します。</p>
+        </article>
+        <article class="property-card property-primary">
+          <span class="property-no">03</span>
+          <div class="property-icon property-icon-farmland" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <ellipse class="icon-shadow" cx="32" cy="53" rx="24" ry="4" fill="#071d45" opacity=".14"/>
+              <path d="m8 37 25-15 23 13-25 16z" fill="#eadfbe" class="icon-line"/>
+              <path d="m8 37 23 14v7L8 44z" fill="#31588d" class="icon-line"/>
+              <path d="m31 51 25-16v7L31 58z" fill="#b89649" class="icon-line"/>
+              <path d="m15 37 18-10M21 41l18-11M27 45l18-11M34 47l17-10" fill="none" class="icon-line" opacity=".82"/>
+              <path d="m12 41 19 11 21-13" fill="none" stroke="#fff" stroke-width="1" opacity=".4"/>
+              <g class="icon-motion icon-sprout">
+                <path d="M33 29v-9" fill="none" class="icon-line"/>
+                <path d="M33 24c-5 0-7-2.6-7-6.5 4.7 0 7 2.4 7 6.5Z" fill="#d6ba73" class="icon-line"/>
+                <path d="M33 22c4.8 0 7-2.4 7-6.2-4.7 0-7 2.3-7 6.2Z" fill="#f5edda" class="icon-line"/>
+              </g>
+            </svg>
+          </div>
+          <h3>農地</h3>
+          <p>田・畑など、維持管理や売却方法にお困りの土地。</p>
+        </article>
+        <article class="property-card">
+          <span class="property-no">04</span>
+          <div class="property-icon property-icon-belongings" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <ellipse class="icon-shadow" cx="32" cy="55" rx="24" ry="4" fill="#071d45" opacity=".14"/>
+              <path d="m7 41 22-13 25 14-23 14z" fill="#e5e8ec" opacity=".82"/>
+              <path d="m10 31 16-10 18 10-17 11z" fill="#0b2d61" class="icon-line"/>
+              <path d="m10 31 17 11v12L10 44z" fill="#eee4cc" class="icon-line"/>
+              <path d="m27 42 17-11v12L27 54z" fill="#b8bec7" class="icon-line"/>
+              <path d="m7 31 19-13 22 12-4 4-18-10-16 10z" fill="#31588d" class="icon-line"/>
+              <path d="m14 36 7 4v6l-7-4z" fill="#d9dde2" class="icon-line"/>
+              <path d="m30 44 6-4v10l-6 4z" fill="#071d45" class="icon-line"/>
+              <path d="m20 20 3 3-2 3 3 3" fill="none" stroke="#d6ba73" stroke-width="1.6" stroke-linecap="round"/>
+              <g class="icon-motion icon-box">
+                <path d="m38 45 9-5 8 4-9 6z" fill="#f5edda" class="icon-line"/>
+                <path d="m38 45 8 5v8l-8-5z" fill="#d6ba73" class="icon-line"/>
+                <path d="m46 50 9-6v8l-9 6z" fill="#b89649" class="icon-line"/>
+                <path d="m42 42.5 8 4.8" fill="none" class="icon-line" opacity=".55"/>
+              </g>
+            </svg>
+          </div>
+          <h3>古家・残置物あり</h3>
+          <p>家財や荷物が残った状態、修繕前の建物でもご相談ください。</p>
+        </article>
+        <article class="property-card">
+          <span class="property-no">05</span>
+          <div class="property-icon property-icon-caution" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <ellipse class="icon-shadow" cx="31" cy="54" rx="23" ry="4" fill="#071d45" opacity=".14"/>
+              <path d="m7 41 21-13 23 13-22 14z" fill="#e5e8ec" opacity=".82"/>
+              <path d="m10 30 16-10 18 10-17 11z" fill="#0b2d61" class="icon-line"/>
+              <path d="m10 30 17 11v13L10 44z" fill="#f5edda" class="icon-line"/>
+              <path d="m27 41 17-11v13L27 54z" fill="#d6ba73" class="icon-line"/>
+              <path d="m7 30 19-13 22 12-4 4-18-10-16 10z" fill="#31588d" class="icon-line"/>
+              <path d="m14 35 7 4v6l-7-4z" fill="#eef2f6" class="icon-line"/>
+              <path d="m31 42 7-4v11l-7 4z" fill="#071d45" class="icon-line"/>
+              <g class="icon-motion icon-alert">
+                <path d="m48 32 8 14-16 .2z" fill="#f5edda" class="icon-line"/>
+                <path d="M48 36.5v5.3" fill="none" class="icon-line"/>
+                <circle cx="48" cy="44.2" r="1" fill="#0b2d61"/>
+              </g>
+            </svg>
+          </div>
+          <h3>事故物件</h3>
+          <p>事情を含めて状況を伺い、取り得る方法を一緒に考えます。</p>
+        </article>
+        <article class="property-card">
+          <span class="property-no">06</span>
+          <div class="property-icon property-icon-land" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false">
+              <ellipse class="icon-shadow" cx="32" cy="54" rx="24" ry="4" fill="#071d45" opacity=".14"/>
+              <path d="m6 45 31-19 21 12-31 20z" fill="#31588d" opacity=".58" class="icon-line"/>
+              <path d="m10 39 27-16 18 10-27 17z" fill="#e5e8ec" class="icon-line"/>
+              <path d="m10 39 18 11v6L10 45z" fill="#0b2d61" class="icon-line"/>
+              <path d="m28 50 27-17v6L28 56z" fill="#b89649" class="icon-line"/>
+              <path d="m15 37 12-7 10 5 7-4 7 4-19 12-8-5-6 3-5-3z" fill="#f5edda" class="icon-line"/>
+              <path d="m24 42 8 5 19-12" fill="none" class="icon-line" opacity=".55"/>
+              <g class="icon-motion icon-route">
+                <path d="m15 40 8-4 8 4 8-5 8 2" fill="none" stroke="#d6ba73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1"/>
+                <path d="m46 34.5 3 2.5-3.5 1.4" fill="#d6ba73" class="icon-line"/>
+              </g>
+              <path d="m12 48 16 9 27-17" fill="none" stroke="#fff" stroke-width="1" opacity=".35"/>
+            </svg>
+          </div>
+          <h3>売れにくい土地</h3>
+          <p>底地・借地・形状に特徴がある土地、他社で断られた土地など。</p>
+        </article>
+      </div>
+      <div class="centered action-row"><a class="text-link" href="#contact">対象かどうかわからない方も相談する <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="section choice-section" id="choices" aria-labelledby="choices-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">状況に合わせて選べる相談入口</p>
+        <h2 id="choices-title">今のお気持ちに近いものを選んでください。</h2>
+        <p>どの入口からでも、同じ相談フォームにつながります。</p>
+      </div>
+      <div class="choice-grid">
+        <button class="choice-card choice-indigo" type="button" data-purpose="まずは相場だけ知りたい">
+          <span class="choice-kicker">将来のために資産価値を知りたい</span>
+          <strong>まずは<span>相場だけ</span>知りたい</strong>
+          <small>相談内容を入力する →</small>
+        </button>
+        <button class="choice-card choice-green" type="button" data-purpose="査定額を見て検討したい">
+          <span class="choice-kicker">高く売れるなら考えたい</span>
+          <strong><span>査定額</span>を見て検討したい</strong>
+          <small>相談内容を入力する →</small>
+        </button>
+        <button class="choice-card choice-terra" type="button" data-purpose="なるべく早く売却したい">
+          <span class="choice-kicker">転勤・引越し、管理負担など</span>
+          <strong>なるべく<span>早く売却</span>したい</strong>
+          <small>相談内容を入力する →</small>
+        </button>
+        <button class="choice-card choice-ochre" type="button" data-purpose="現金化を急ぎたい">
+          <span class="choice-kicker">期限や資金面の事情がある</span>
+          <strong><span>現金化</span>を急ぎたい</strong>
+          <small>相談内容を入力する →</small>
+        </button>
+      </div>
+
+      <div class="contact-panel" id="contact">
+        <header class="contact-appeal">
+          <div>
+            <p class="eyebrow">無料相談・買取査定フォーム</p>
+            <h2>かんたん入力で無料査定</h2>
+            <p>相場を知りたい方、早く売却したい方、売れるか不安な方も、お気軽にご相談ください。</p>
+          </div>
+          <div class="contact-appeal-note">
+            <span>最初の入力は約30秒</span>
+            <strong>売却を決めていない方もご相談いただけます</strong>
+          </div>
+        </header>
+
+        <form class="contact-form" data-contact-form novalidate>
+          <div class="form-steps" aria-label="入力の進み方">
+            <span class="form-step-indicator is-current" data-step-indicator="1" aria-current="step"><b>1</b>物件情報</span>
+            <span class="form-step-indicator" data-step-indicator="2"><b>2</b>連絡先</span>
+          </div>
+
+          <section class="form-step" data-form-step="1" aria-labelledby="form-step1-title">
+            <div class="step-heading">
+              <span>STEP 1</span>
+              <h3 id="form-step1-title">物件について教えてください</h3>
+              <p>わかる範囲で選ぶだけで大丈夫です。</p>
+            </div>
+
+            <fieldset class="field field-full choice-field" data-field-group="propertyType">
+              <legend>物件種別 <span class="required-badge">必須</span></legend>
+              <div class="property-type-grid">
+                <label class="property-type-choice"><input type="radio" name="propertyType" value="戸建て" required><span class="choice-check" aria-hidden="true">✓</span><strong>戸建て</strong></label>
+                <label class="property-type-choice"><input type="radio" name="propertyType" value="マンション"><span class="choice-check" aria-hidden="true">✓</span><strong>マンション</strong></label>
+                <label class="property-type-choice"><input type="radio" name="propertyType" value="土地"><span class="choice-check" aria-hidden="true">✓</span><strong>土地</strong></label>
+                <label class="property-type-choice"><input type="radio" name="propertyType" value="収益物件・事業用"><span class="choice-check" aria-hidden="true">✓</span><strong>収益物件・事業用</strong></label>
+                <label class="property-type-choice"><input type="radio" name="propertyType" value="農地・田畑"><span class="choice-check" aria-hidden="true">✓</span><strong>農地・田畑</strong></label>
+                <label class="property-type-choice"><input type="radio" name="propertyType" value="その他"><span class="choice-check" aria-hidden="true">✓</span><strong>その他</strong></label>
+              </div>
+              <p class="field-error" data-error-for="propertyType" hidden>物件種別を選択してください。</p>
+            </fieldset>
+
+            <div class="field">
+              <label for="prefecture">都道府県 <span class="required-badge">必須</span></label>
+              <select id="prefecture" name="prefecture" autocomplete="address-level1" required>
+                <option value="">選択してください</option>
+                <option>岐阜県</option>
+                <option>愛知県</option>
+                <option>その他・不明</option>
+              </select>
+              <p class="field-error" data-error-for="prefecture" hidden>都道府県を選択してください。</p>
+            </div>
+            <div class="field">
+              <label for="city">市区町村 <span class="required-badge">必須</span></label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="例：岐阜市" required>
+              <p class="field-error" data-error-for="city" hidden>市区町村を入力してください。</p>
+            </div>
+            <div class="field field-full">
+              <label for="area">町名またはエリア <span class="required-badge">必須</span></label>
+              <input id="area" name="area" type="text" autocomplete="address-line1" placeholder="例：六条片田、名古屋市北部など" required>
+              <p class="field-error" data-error-for="area" hidden>町名またはエリアを入力してください。</p>
+            </div>
+
+            <button class="estimate-start" type="button" data-next-step>
+              <span class="estimate-start-label">かんたん30秒</span>
+              <strong>無料査定スタート</strong>
+              <span class="estimate-start-arrow" aria-hidden="true">→</span>
+            </button>
+            <p class="estimate-note">相談無料・売却を決めていない方も大丈夫です</p>
+          </section>
+
+          <section class="form-step" data-form-step="2" aria-labelledby="form-step2-title" hidden>
+            <div class="step-heading">
+              <span>STEP 2</span>
+              <h3 id="form-step2-title">連絡先とご相談内容</h3>
+              <p>ご希望の連絡方法に合わせてご連絡します。</p>
+            </div>
+
+            <fieldset class="field field-full choice-field" data-field-group="purpose">
+              <legend>相談の目的 <span class="required-badge">必須</span></legend>
+              <div class="purpose-grid">
+                <label><input type="radio" name="purpose" value="まずは相場だけ知りたい" required><span>相場だけ知りたい</span></label>
+                <label><input type="radio" name="purpose" value="査定額を見て検討したい"><span>査定額を知りたい</span></label>
+                <label><input type="radio" name="purpose" value="なるべく早く売却したい"><span>早く売却したい</span></label>
+                <label><input type="radio" name="purpose" value="現金化を急ぎたい"><span>現金化を急いでいる</span></label>
+                <label><input type="radio" name="purpose" value="まだわからない"><span>売るかまだ決めていない</span></label>
+              </div>
+              <p class="field-error" data-error-for="purpose" hidden>相談の目的を選択してください。</p>
+            </fieldset>
+
+            <div class="field">
+              <label for="name">お名前 <span class="required-badge">必須</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <p class="field-error" data-error-for="name" hidden>お名前を入力してください。</p>
+            </div>
+            <div class="field">
+              <label for="contact-info">電話番号 <span class="required-badge">必須</span></label>
+              <input id="contact-info" name="contact" type="tel" inputmode="tel" autocomplete="tel" placeholder="例：058-000-0000" required>
+              <p class="field-error" data-error-for="contact" hidden>10〜11桁の電話番号を入力してください。</p>
+            </div>
+            <div class="field field-full">
+              <label for="email">メールアドレス <span class="required-badge">必須</span></label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="例：info@example.jp" required>
+              <p class="field-error" data-error-for="email" hidden>正しい形式のメールアドレスを入力してください。</p>
+            </div>
+            <fieldset class="field field-full choice-field" data-field-group="contactMethod">
+              <legend>希望する連絡方法 <span class="required-badge">必須</span></legend>
+              <div class="contact-method-grid">
+                <label><input type="radio" name="contactMethod" value="電話" required><span>電話</span></label>
+                <label><input type="radio" name="contactMethod" value="メール"><span>メール</span></label>
+                <label><input type="radio" name="contactMethod" value="どちらでもよい"><span>どちらでもよい</span></label>
+              </div>
+              <p class="field-error" data-error-for="contactMethod" hidden>希望する連絡方法を選択してください。</p>
+            </fieldset>
+            <div class="field field-full">
+              <label for="message">状況・お悩み <small>任意</small></label>
+              <textarea id="message" name="message" rows="4" placeholder="例：相続した家が空き家になっている。売るかはまだ決めていない。"></textarea>
+            </div>
+            <p class="form-error form-error-summary" data-form-error role="alert" hidden>入力内容をご確認ください。</p>
+            <div class="form-actions">
+              <button class="button button-outline form-back" type="button" data-prev-step>戻る</button>
+              <button class="button button-navy button-submit" type="submit">入力内容を確認する <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="form-note">※第1稿では確認画面までです。公開前に実際の送信先を設定します。</p>
+          </section>
+        </form>
+
+        <aside class="contact-intro">
+          <p class="eyebrow light">安心してご相談いただくために</p>
+          <h2>わかる範囲だけで<br>お聞かせください。</h2>
+          <p>物件資料がなくても大丈夫です。売却を決めていない段階でもご相談いただけます。</p>
+          <ul>
+            <li>相談内容は慎重に取り扱います</li>
+            <li>ご希望を確認してから進めます</li>
+            <li>難しい言葉を避けてご説明します</li>
+          </ul>
+        </aside>
+
+        <div class="form-confirmation" data-form-confirmation hidden>
+          <span class="confirmation-mark" aria-hidden="true">✓</span>
+          <h3>入力内容をご確認ください。</h3>
+          <p>この画面ではまだ送信されていません。</p>
+          <dl class="confirmation-summary" data-confirmation-summary></dl>
+          <p class="form-note">※第1稿のため、実際の送信先はまだ接続されていません。</p>
+          <button type="button" class="button button-outline" data-edit-form>入力内容を修正する</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-navy" id="strengths" aria-labelledby="strengths-title">
+      <div class="section-heading centered light-heading">
+        <p class="eyebrow light">説明の見える信頼づくり</p>
+        <h2 id="strengths-title">相談前から、判断材料が見える会社へ。</h2>
+        <p>「なぜその方法なのか」「金額は何で変わるのか」を、順序立ててお伝えします。</p>
+      </div>
+      <div class="promise-grid">
+        <article><span>01</span><h3>売る前提にしない</h3><p>まず状況と希望を確認し、売却以外の選択肢も含めて整理します。</p></article>
+        <article><span>02</span><h3>できる・難しいを説明</h3><p>曖昧な期待を持たせず、条件と理由をわかりやすくお伝えします。</p></article>
+        <article><span>03</span><h3>査定の根拠を見せる</h3><p>土地、建物、残置物、活用コストなど、見ている要素を説明します。</p></article>
+        <article><span>04</span><h3>片付け前でも相談可能</h3><p>現状を確認してから、必要な対応と進め方を一緒に考えます。</p></article>
+        <article><span>05</span><h3>岐阜・愛知を同じ温度で</h3><p>県境にとらわれず、物件ごとの地域性と需要を丁寧に確認します。</p></article>
+        <article><span>06</span><h3>相談内容を慎重に扱う</h3><p>ご家族や近隣への配慮が必要な事情も、落ち着いてお聞きします。</p></article>
+      </div>
+    </section>
+
+    <section class="section pricing-section" aria-labelledby="pricing-title">
+      <div class="pricing-copy">
+        <p class="eyebrow">査定額の考え方</p>
+        <h2 id="pricing-title"><span class="pricing-title-line">価格は、4つの要素を</span><span class="pricing-title-line">組み合わせて考えます。</span></h2>
+        <p>単純な面積だけではなく、その不動産を次にどう生かせるかまで見て判断します。</p>
+        <a class="text-link" href="#contact">査定について相談する →</a>
+        <figure class="pricing-sample">
+          <img src="assets/sample-land-cleared.png" alt="整備された土地の活用イメージ" loading="lazy">
+          <figcaption>土地活用を考えるための参考イメージ<br><span>※実際の買取・施工事例ではありません。</span></figcaption>
+        </figure>
+      </div>
+      <div class="factor-diagram" aria-label="査定額を構成する4つの要素">
+        <div class="factor factor-one"><span>1</span><strong>土地</strong><small>立地・形状・接道</small></div>
+        <div class="factor factor-two"><span>2</span><strong>建物</strong><small>築年・状態・用途</small></div>
+        <div class="factor factor-three"><span>3</span><strong>整理費用</strong><small>残置物・解体・整備</small></div>
+        <div class="factor factor-four"><span>4</span><strong>活用可能性</strong><small>地域需要・次の使い方</small></div>
+        <div class="factor-center">査定額</div>
+      </div>
+    </section>
+
+    <section class="section use-image-section" aria-labelledby="use-image-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">土地の状態も含めて考えます</p>
+        <h2 id="use-image-title">次の使い方を想像できるかが、判断の一つになります。</h2>
+        <p>状態だけを見て決めつけず、必要な整備と活用方法を検討します。</p>
+      </div>
+      <div class="image-example-grid single-example">
+        <figure>
+          <img src="assets/sample-land-work-no-logo.png" alt="土地を整備しているイメージ写真" loading="lazy">
+          <figcaption><strong>整備や活用方法を検討するイメージ</strong><span>写真はイメージです。実際の買取・施工事例ではありません。</span></figcaption>
+        </figure>
+        <div class="example-note"><strong>見るのは「今の状態」だけではありません。</strong><p>周辺環境、道路との関係、形状、必要な整備などを確認し、その土地にどのような選択肢があるかを整理します。</p><a class="text-link" href="#contact">土地について相談する →</a></div>
+      </div>
+    </section>
+
+    <section class="section section-mist comparison-section" id="comparison" aria-labelledby="comparison-title">
+      <div class="speed-comparison">
+        <div class="speed-diagram" role="group" aria-label="直接買取と仲介売却の手続きの違い">
+          <p class="speed-diagram-title">売却相談から引渡しまでの流れ</p>
+          <div class="speed-track speed-track-direct">
+            <strong class="speed-track-label">直接買取</strong>
+            <ol aria-label="直接買取の流れ">
+              <li>売却相談</li>
+              <li>現地確認<br>・査定</li>
+              <li>買取条件<br>の提示</li>
+              <li>契約</li>
+              <li class="speed-finish">引渡し<br><b>現金化</b></li>
+            </ol>
+          </div>
+          <p class="speed-message">直接買取なら、購入希望者を探す工程がありません</p>
+          <div class="speed-track speed-track-brokerage">
+            <strong class="speed-track-label">仲介売却</strong>
+            <ol aria-label="仲介売却の流れ">
+              <li>売却相談</li>
+              <li>査定</li>
+              <li>販売活動</li>
+              <li>内覧・<br>条件調整</li>
+              <li>買主決定</li>
+              <li>契約・<br>ローン審査</li>
+              <li class="speed-finish">引渡し</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="speed-copy">
+          <span class="speed-number" aria-hidden="true">02</span>
+          <p class="eyebrow">直接買取の特徴</p>
+          <h2 id="comparison-title"><span>買取スピードが速く、</span><em>迅速な現金化を目指せます</em></h2>
+          <p>トライズエステートが直接買主となるため、一般の購入希望者を探す販売活動や複数回の内覧対応が原則不要です。条件が合えば、仲介より少ない工程で引渡しまで進められます。</p>
+          <a class="text-link" href="#contact">売却時期について相談する →</a>
+        </div>
+      </div>
+      <p class="comparison-note">※物件の状態や権利関係、必要な手続きにより、引渡しまでの期間は異なります。売却方法を先に決める必要はありません。</p>
+    </section>
+
+    <section class="section flow-section" id="flow" aria-labelledby="flow-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">ご相談から売却まで</p>
+        <h2 id="flow-title" class="single-line-title">進み方を先に見える形にします。</h2>
+      </div>
+      <ol class="flow-list">
+        <li><span>01</span><div><h3>無料相談</h3><p>場所や種類、困っていることを伺います。</p></div></li>
+        <li><span>02</span><div><h3>情報整理</h3><p>資料がなくても、わかる範囲から確認します。</p></div></li>
+        <li><span>03</span><div><h3>現地確認</h3><p>建物、土地、周辺環境を確認します。</p></div></li>
+        <li><span>04</span><div><h3>方法と査定の説明</h3><p class="flow-one-line">買取・仲介の違いと根拠を説明します。</p></div></li>
+        <li><span>05</span><div><h3>ご判断</h3><p>内容を持ち帰って検討できます。</p></div></li>
+        <li><span>06</span><div><h3>契約・引渡し</h3><p>納得いただいた場合のみ、必要な手続きを進めます。</p></div></li>
+      </ol>
+      <div class="centered action-row"><a class="button button-gold" href="#contact">まず状況を相談する →</a></div>
+    </section>
+
+    <section class="area-section" aria-labelledby="area-title">
+      <div class="area-image"><img src="assets/gifu-cityscape.png" alt="岐阜の街並みイメージ" loading="lazy"></div>
+      <div class="area-copy">
+        <p class="eyebrow light">対応エリア</p>
+        <h2 id="area-title"><span class="area-title-line">岐阜県も、愛知県も。</span><span class="area-title-line">地域ごとの事情を見ます。</span></h2>
+        <div class="area-columns">
+          <div><strong>岐阜県</strong><p>岐阜市周辺をはじめ、空き家・相続不動産・農地などをご相談ください。</p></div>
+          <div><strong>愛知県</strong><p>名古屋近郊を含む住宅地・市街地の不動産も、同じ窓口で対応します。</p></div>
+        </div>
+        <p class="area-note">エリア外や境界付近の物件も、まず所在地をお知らせください。</p>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">よくある質問</p>
+        <h2 id="faq-title" class="single-line-title">相談前の不安を、先に解消します。</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>まだ売ると決めていませんが、相談できますか？</summary><p>はい。相場や選択肢を知りたい段階でも大丈夫です。相談したからといって、売却を前提に進めることはありません。</p></details>
+        <details><summary>荷物が残った空き家でも相談できますか？</summary><p>はい。まず現状をお聞かせください。片付けの要否や進め方は、物件の状態を確認してから整理します。</p></details>
+        <details><summary>農地も見てもらえますか？</summary><p>はい。場所、現況、今後の希望を確認します。農地は条件によって手続きや可能な方法が異なるため、個別に確認します。</p></details>
+        <details><summary>岐阜県と愛知県のどちらでも対応できますか？</summary><p>はい。岐阜県・愛知県のどちらもご相談いただけます。具体的な対応可否は所在地と物件状況を確認してお伝えします。</p></details>
+        <details><summary>査定額はどのように決まりますか？</summary><p>土地、建物、整備に必要な費用、地域での活用可能性などを総合して考え、見ている要素をご説明します。</p></details>
+      </div>
+    </section>
+
+    <section class="section office-section" id="company" aria-labelledby="company-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">相談する場所が見える安心</p>
+        <h2 id="company-title" class="single-line-title">実在する事務所でお話を伺います。</h2>
+        <p>相談する場所と、相談後の進め方をわかりやすくお見せします。</p>
+      </div>
+      <div class="office-mosaic">
+        <figure class="office-main"><img src="assets/office-exterior.jpg" alt="トライズエステート株式会社の事務所外観" loading="lazy"><figcaption>事務所外観</figcaption></figure>
+        <figure><img src="assets/office-sign.jpg" alt="事務所に掲示されたTRYS ESTATEの看板" loading="lazy"><figcaption>事務所看板</figcaption></figure>
+        <figure><img src="assets/office-meeting-room.jpg" alt="相談に使用する応接室" loading="lazy"><figcaption>応接室</figcaption></figure>
+      </div>
+      <div class="company-media-grid">
+        <div class="brand-movie">
+          <div class="movie-heading"><span>BRAND MOVIE</span><h3>トラ猫がトライズエステートをご紹介します</h3></div>
+          <video controls preload="metadata" playsinline aria-label="トライズエステート紹介動画">
+            <source src="assets/trys-estate-tora-cat-intro.mp4" type="video/mp4">
+            お使いのブラウザは動画再生に対応していません。
+          </video>
+        </div>
+        <div class="company-facts">
+          <p class="eyebrow">会社情報</p>
+          <h3>トライズエステート株式会社</h3>
+          <dl>
+            <div><dt>所在地</dt><dd>岐阜県岐阜市六条片田二丁目16番5号</dd></div>
+            <div><dt>対応</dt><dd>岐阜県・愛知県の不動産売却相談</dd></div>
+            <div><dt>主な相談</dt><dd>空き家・相続不動産・農地・残置物のある家・事故物件・売れにくい土地</dd></div>
+          </dl>
+          <a class="button button-navy" href="#contact">来店前に相談する →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div>
+        <p class="eyebrow light">売るかどうかは、相談してから決められます。</p>
+        <h2 id="final-title">その不動産の困りごと、<br>一度いっしょに整理しませんか。</h2>
+        <p>物件の場所と、今わかっていることだけで構いません。</p>
+      </div>
+      <a class="button button-gold button-large" href="#contact">無料相談フォームへ →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <img src="assets/logo-horizontal.svg" alt="TRYS ESTATE トライズエステート株式会社" width="245" height="64">
+      <div>
+        <strong>岐阜・愛知 お困り不動産買取所</strong>
+        <p>運営：トライズエステート株式会社<br>岐阜県岐阜市六条片田二丁目16番5号</p>
+      </div>
+      <nav aria-label="フッターメニュー">
+        <a href="#properties">対象不動産</a><a href="#choices">相談内容</a><a href="#flow">売却の流れ</a><a href="#faq">よくある質問</a><a href="#company">会社情報</a>
+      </nav>
+    </div>
+    <div class="footer-bottom"><small>© TRYS ESTATE Co., Ltd.</small><a href="#top">ページ上部へ ↑</a></div>
+  </footer>
+
+  <div class="mobile-sticky" aria-label="固定相談メニュー">
+    <a href="#choices">相談入口</a>
+    <a href="#contact">無料相談</a>
+  </div>
 </body>
 </html>
